@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define( 'AUTH_KEY',         'your_unique_phrase_here' );
+define( 'SECURE_AUTH_KEY',  'your_unique_phrase_here' );
+define( 'LOGGED_IN_KEY',    'your_unique_phrase_here' );
+define( 'NONCE_KEY',        'your_unique_phrase_here' );
+define( 'AUTH_SALT',        'your_unique_phrase_here' );
+define( 'SECURE_AUTH_SALT', 'your_unique_phrase_here' );
+define( 'LOGGED_IN_SALT',   'your_unique_phrase_here' );
+define( 'NONCE_SALT',       'your_unique_phrase_here' );
 
 /**#@-*/
 
@@ -83,7 +83,9 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-
+/** Define WP_HOME and WP_SITEURL */
+define( 'WP_HOME', 'https://wordpress-golafrooz.chbk.run/' );
+define( 'WP_SITEURL', 'https://wordpress-golafrooz.chbk.run/' );
 
 /* That's all, stop editing! Happy publishing. */
 
