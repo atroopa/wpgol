@@ -1,0 +1,30 @@
+name: golafrooz
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: "20"
+
+    - name: Install and Deploy Chabokan
+      env:
+        CHABOKAN_TOKEN: ${{ secrets.CHABOKAN_TOKEN }}
+      run: |
+        npm install -g @chabokan.net/cli
+        chabok login -t $CHABOKAN_TOKEN
+        chabok deploy -s golafrooz
