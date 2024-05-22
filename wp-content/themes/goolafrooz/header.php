@@ -1,4 +1,4 @@
-<html>
+<html <?php language_attributes(); ?>>
 
 <head>
   <meta charset="utf-8">
@@ -146,7 +146,7 @@
     .navbar .logo {
       font-family: "Montserrat", sans-serif;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 14px;
       color: whitesmoke;
       text-decoration: none;
     }
@@ -165,7 +165,7 @@
       padding-bottom: 30px;
       padding-left: 10%;
       padding-right: 10%;
-      width: 100vw;
+      width: 100%;
       transition: top 0.2s ease-out;
       z-index: 1000;
     }
@@ -233,76 +233,79 @@
     }
 
     @media (max-width: 1250px) {
-      #myLogo {
-        max-width: 80px;
-        /* Adjust max-width for mobile view */
-        max-height: 60px;
-        /* Adjust max-height for mobile view */
-      }
+  #myLogo {
+    max-width: 80px;
+    /* Adjust max-width for mobile view */
+    max-height: 60px;
+    /* Adjust max-height for mobile view */
+  }
 
-      .navbar .nav__links {
-        position: fixed;
-        top: 100px;
-        left: -100%;
-        background-color: rgb(17 24 39);
-        height: 100vh;
-        width: 100%;
-        display: block;
-        text-align: left;
-        transition: all 0.3s ease;
-      }
+  .navbar .nav__links {
+    position: fixed;
+    top: 100px;
+    left: -100%;
+    background-color: rgb(17 24 39);
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
 
-      .navbar .cta {
-        display: inline-flex;
-        position: fixed;
-        bottom: 80px;
-        width: 50vw;
-        left: -100;
-        justify-content: center;
-        transition: all 0.3s ease;
-      }
+  .navbar .cta {
+    display: inline-flex;
+    position: fixed;
+    bottom: 80px;
+    width: 50vw;
+    left: -100%;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
 
-      .navbar #click:not(:checked)~.nav__links {
-        left: -100%;
-      }
+  .navbar #click:not(:checked)~.nav__links {
+    left: -100%;
+  }
 
-      .navbar #click:not(:checked)~.cta {
-        left: -100%;
-      }
+  .navbar #click:not(:checked)~.cta {
+    left: -100%;
+  }
 
-      .navbar #click:checked~.nav__links {
-        left: 0%;
-      }
+  .navbar #click:checked~.nav__links {
+    left: 0;
+  }
 
-      .navbar #click:checked~.cta {
-        left: 25%;
-      }
+  .navbar #click:checked~.cta {
+    left: 25%;
+  }
 
-      .navbar #click:checked~.menu-btn i:before {
-        content: "\f00d";
-      }
+  .navbar #click:checked~.menu-btn i:before {
+    content: "\f00d";
+  }
 
-      .navbar .nav__links li {
-        display: block;
-        margin-top: 40px;
-      }
+  .navbar .nav__links li {
+    display: block;
+    margin-top: 40px;
+  }
 
-      .navbar .menu-btn {
-        display: inline-block;
-      }
+  .navbar .menu-btn {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+  }
 
-      .navbar .logo img {
-        max-width: 30px;
-        /* Adjust max-width for mobile view */
-        max-height: 30px;
-        /* Adjust max-height for mobile view */
-      }
+  .navbar .logo img {
+    max-width: 30px;
+    /* Adjust max-width for mobile view */
+    max-height: 30px;
+    /* Adjust max-height for mobile view */
+  }
 
-      .navbar .logo span {
-        font-size: 12px;
-        /* Smaller font size for mobile view */
-      }
-    }
+  .navbar .logo span {
+    font-size: 12px;
+    /* Smaller font size for mobile view */
+  }
+}
+
   </style>
 
 </head>
