@@ -79,7 +79,7 @@
 
 
     .slider-wrapper {
-      position: sticky;
+      position: relative;
       width: 100%;
       margin-top: 0px;
     }
@@ -196,7 +196,7 @@
       padding-bottom: 9px;
       padding-left: 25px;
       padding-right: 25px;
-
+      background-color: rgba(0, 136, 169, 1);
       border: none;
       border-radius: 50px;
       cursor: pointer;
@@ -341,7 +341,7 @@
         <li><a href="<?php echo home_url()."/گالری/"; ?>">گالری</a></li>
         <li><a href="<?php echo home_url()."/مقالات/"; ?>">مقالات</a></li>
         <li><a href="<?php echo home_url()."/تماس با ما/"; ?>">ارتباط با ما</a></li>
-        <li><a href="#" id="color-changing-button" class="block w-1/2 md:hidden text-sm md:text-xl rounded-lg bg-blue-700 px-6 py-2 md:px-12 md:py-4 text-center font-bold text-black hover:bg-blue-900">محصولات و تجهیزات</a></li>
+        <li><a href="<?php echo home_url()."/محصولات/"; ?>" id="color-changing-button" class="block w-1/2 md:hidden text-sm md:text-xl rounded-lg bg-blue-700 px-6 py-2 md:px-12 md:py-4 text-center font-bold text-black hover:bg-blue-900">محصولات و تجهیزات</a></li>
       </ul>
       <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -365,17 +365,15 @@
         });
       </script>
 
-      <button href="#" id="color-changing" class="hidden md:block text-sm md:text-xl rounded-lg bg-blue-700 px-12 py-4 text-center font-bold text-black hover:bg-blue-900">محصولات و تجهیزات</button>
+      <button href="<?php echo home_url()."/محصولات/"; ?>" id="color-changing" class="hidden md:block text-sm md:text-xl rounded-lg bg-blue-700 px-12 py-4 text-center font-bold text-black hover:bg-blue-900">محصولات و تجهیزات</button>
 
     </header>
     <div class="w-full h-[20vh] bg-red-100">
       header
     </div>
-    <!-- -------------------------------------------------------------------------------------------------------------- -->
+  </div>
 
-
-
-    <div class=" mx-10 md:mx-0"></div>
+  <div class=" mx-10 md:mx-0"></div>
     <style>
   @keyframes wiggle {
     0% {
@@ -400,7 +398,7 @@
   }
 </style>
 
-    <div class="fixed flex flex-col bottom-0 right-8 w-full">
+    <div class="fixed flex flex-col bottom-0 right-8 w-full z-50">
       <a href="tel:+989147281416">
         <div class="flex flex-col items-center justify-center float-right my-1 rounded-full bg-[#3490dc] px-4 py-4 text-sm font-bold tracking-wide text-white focus:outline-none">
           <svg class="animate-wiggle" width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -414,4 +412,3 @@
         </div>
       </a>
     </div>
-  </div>
