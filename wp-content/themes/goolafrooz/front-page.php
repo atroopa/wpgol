@@ -315,10 +315,10 @@
   <h1 class="relative top-0 w-fit h-auto py-4 justify-center flex bg-gradient-to-r items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-xl text-6xl font-extrabold text-transparent text-center select-auto">
     گالری تصاویر مجموعه گل افروز
   </h1>
-  <div class="mx-auto max-w-6xl px-6 p-8">
+  <div class="mx-auto max-w-6xl px-6 p-8 ">
     <div class="flex">
-      <div class="group relative h-96 w-24 hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
-        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/1.webp' ?>" alt="golafrooz"  class="h-full object-cover group-hover:rotate-12 group-hover:scale-125 transition-all" alt="green house" />
+      <div class="group relative h-96 w-24  hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
+        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/1.webp' ?>" alt="golafrooz"  class="h-full max-w-300 object-cover group-hover:rotate-12 group-hover:scale-125 transition-all" alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
             <div class="flex gap-3 text-white">
@@ -339,7 +339,7 @@
           </div>
         </div>
       </div>
-      <div class="group relative h-96 w-24 hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
+      <div class="group relative h-96 w-24  hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
         <img src="<?php echo get_template_directory_uri().'/img/front-gallery/2.webp' ?>" class="h-full object-cover group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8 ">
@@ -363,7 +363,7 @@
           </div>
         </div>
       </div>
-      <div class="group relative h-96 w-24 hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
+      <div class="group relative h-96 w-24  hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
         <img src="<?php echo get_template_directory_uri().'/img/front-gallery/3.webp' ?>" class="h-full object-cover group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
