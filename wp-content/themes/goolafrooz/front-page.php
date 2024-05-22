@@ -288,11 +288,11 @@
   </div>
   </div>
 </section>
-<a  href="<?php echo home_url()."/گالری/"; ?>">
+
 <div class="flex flex-row items-center justify-center">
-  <div>-----------------------------------------------</div>
-  <p class="justify-center items-center text-4xl font-bold p-10">گالری</p>
-  <div>-----------------------------------------------</div>
+  <div class="hidden lg:block">-----------------------------------------------</div>
+  <p class="justify-center items-center text-xl lg:text-4xl font-bold p-10">گالری</p>
+  <div class="hidden lg:block">-----------------------------------------------</div>
 </div>
 <div class="flex flex-col min-h-screen items-center justify-center bg-gray-900">
   <ul class="flex flex-col md:grid grid-cols-3 gap-5  text-redis-neutral-800 max-w-2xl mx-auto p-10 mt-10">
@@ -309,10 +309,10 @@
       <div class="text-right">پروژه از سال 98 تا امروز</div>
     </li>
   </ul>
-  <span class="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-6xl box-content font-extrabold text-transparent text-center select-none">
+  <span class="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-xl lg:text-6xl box-content font-extrabold text-transparent text-center select-none">
     گالری تصاویر مجموعه گل افروز
   </span>
-  <h1 class="relative top-0 w-fit h-auto py-4 justify-center flex bg-gradient-to-r items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-6xl font-extrabold text-transparent text-center select-auto">
+  <h1 class="relative top-0 w-fit h-auto py-4 justify-center flex bg-gradient-to-r items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-xl text-6xl font-extrabold text-transparent text-center select-auto">
     گالری تصاویر مجموعه گل افروز
   </h1>
   <div class="mx-auto max-w-6xl px-6 p-8">
@@ -384,7 +384,7 @@
           </div>
         </div>
       </div>
-      <div class="group relative h-96 w-24 hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
+      <div class="hidden lg:block group relative h-96 w-24 hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
         <img src="<?php echo get_template_directory_uri().'/img/front-gallery/5.webp' ?>" class="h-full object-cover group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
@@ -406,7 +406,7 @@
           </div>
         </div>
       </div>
-      <div class="group relative h-96 w-24 hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
+      <div class="hidden lg:block group relative h-96 w-24 hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
         <img src="<?php echo get_template_directory_uri().'/img/front-gallery/4.webp' ?>" class="h-full object-cover group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
@@ -431,7 +431,6 @@
     </div>
   </div>
 </div>
-</a>
 <!-- ---------------------------------------------------------------- -->
 <div class="flex flex-row items-center justify-center">
 
