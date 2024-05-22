@@ -1,11 +1,11 @@
-<!doctype html>
-<html <?php language_attributes(); ?>>
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/img/logo/golafrooz.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -79,10 +79,9 @@
 
 
     .slider-wrapper {
-      position: relative;
+      position: sticky;
       width: 100%;
-
-      margin: 0 auto;
+      margin-top: 0px;
     }
 
     .slider {
@@ -130,50 +129,226 @@
       opacity: 1;
     }
   </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+    .navbar * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(17 24 39);
+      direction: ltr;
+    }
+
+    .navbar li,
+    .navbar a,
+    .navbar button,
+    .navbar .logo {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: whitesmoke;
+      text-decoration: none;
+    }
+
+    .navbar #click {
+      display: none;
+    }
+
+    .navbar header {
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      top: 0;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 10%;
+      padding-right: 10%;
+      width: 100vw;
+      transition: top 0.2s ease-out;
+      z-index: 1000;
+    }
+
+    .navbar .nav__links {
+      list-style: none;
+    }
+
+    .navbar .nav__links li {
+      display: inline-block;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .navbar .nav__links li a {
+      transition: all 0.3s ease 0s;
+    }
+
+    .navbar .nav__links li a:hover,
+    .navbar .active {
+      color: #0088A9;
+    }
+
+    .navbar button {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 25px;
+      padding-right: 25px;
+
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+    }
+
+    .navbar button:hover {
+      background-color: rgba(0, 136, 169, 0.8);
+    }
+
+    .navbar .logo {
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      /* Flex container for logo and text */
+      align-items: center;
+      /* Center items vertically */
+    }
+
+    #myLogo {
+      max-width: 120px;
+      /* Max width for desktop view */
+      max-height: 90px;
+      /* Max height for desktop view */
+      margin-right: 10px;
+      /* Add some spacing between image and text */
+    }
+
+    .navbar .menu-btn {
+      color: white;
+      display: none;
+      cursor: pointer;
+      padding-left: 10px;
+    }
+
+    @media (max-width: 1250px) {
+      #myLogo {
+        max-width: 80px;
+        /* Adjust max-width for mobile view */
+        max-height: 60px;
+        /* Adjust max-height for mobile view */
+      }
+
+      .navbar .nav__links {
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        background-color: rgb(17 24 39);
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: left;
+        transition: all 0.3s ease;
+      }
+
+      .navbar .cta {
+        display: inline-flex;
+        position: fixed;
+        bottom: 80px;
+        width: 50vw;
+        left: -100;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+
+      .navbar #click:not(:checked)~.nav__links {
+        left: -100%;
+      }
+
+      .navbar #click:not(:checked)~.cta {
+        left: -100%;
+      }
+
+      .navbar #click:checked~.nav__links {
+        left: 0%;
+      }
+
+      .navbar #click:checked~.cta {
+        left: 25%;
+      }
+
+      .navbar #click:checked~.menu-btn i:before {
+        content: "\f00d";
+      }
+
+      .navbar .nav__links li {
+        display: block;
+        margin-top: 40px;
+      }
+
+      .navbar .menu-btn {
+        display: inline-block;
+      }
+
+      .navbar .logo img {
+        max-width: 30px;
+        /* Adjust max-width for mobile view */
+        max-height: 30px;
+        /* Adjust max-height for mobile view */
+      }
+
+      .navbar .logo span {
+        font-size: 12px;
+        /* Smaller font size for mobile view */
+      }
+    }
+  </style>
+
 </head>
 
 <body>
-  <header class="fixed sticky z-50 top-0 flex w-full  flex-row justify-between items-center bg-gray-900 px-8 py-3 text-white shadow-md lg:px-10">
-    <script>
-      const logos = [
-        "<?php echo get_template_directory_uri() ?>/img/logo/golafrooz.png",
-        "<?php echo get_template_directory_uri() ?>/img/logo/golafrooz-1.png"
-      ];
-      let currentLogoIndex = 0;
+  <div class="navbar ">
 
-      setInterval(() => {
-        const logoElement = document.querySelector('.logo-image');
-        currentLogoIndex = (currentLogoIndex + 1) % logos.length;
-        logoElement.src = logos[currentLogoIndex];
-      }, 2000);
-    </script>
-    <div class=" flex flex-row items-center justify-between">
-      <a href="https://golafrooz.com" class="flex items-center space-x-3 rtl:space-x-reverse m-2">
-        <img class="logo-image w-24 h-24 rounded-full mx-auto" src="https://golafrooz.com/wp-content/uploads/2024/04/golafrooz.png" alt="logo" width="384" height="512">
-        <span class="self-center text-sm lg:text-2xl font-semibold whitespace-nowrap text-white">GOLAFROOZ CO</span>
-      </a>
-    </div>
-    <label for="menu-toggle" class="block cursor-pointer md:hidden">
-      <span class="sr-only">Open main menu</span>
-      <svg class="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-      </svg>
-    </label>
-    <input type="checkbox" id="menu-toggle" class="hidden" />
-    <div class="text-right font-bold  md:text-sm hidden md:flex md:items-center md:w-auto w-full" id="menu">
-      <nav class="flex flex-row items-center justify-between">
-        <div class="flex flex-row items-center justify-between pt-4 text-base md:flex md:pt-0">
-          <?PHP wp_nav_menu(array(
-            'theme_location' => 'Main_Menu',
-            'depth' => '1',
-            'menu'           => false,
-            'container'      => 'div',
-            'menu_class'  => ' !text-white items-start justify-start gap-x-5 px-10 w-full flex flex-row ',
-          )); ?>
-          <div>
-            <script>
+    <header>
+      <script>
+        const logos = [
+          "<?php echo get_template_directory_uri() ?>/img/logo/golafrooz.png",
+          "<?php echo get_template_directory_uri() ?>/img/logo/golafrooz-1.png"
+        ];
+        let currentLogoIndex = 0;
+        setInterval(() => {
+          const logoElement = document.querySelector('.logo-image');
+          currentLogoIndex = (currentLogoIndex + 1) % logos.length;
+          logoElement.src = logos[currentLogoIndex];
+        }, 2000);
+      </script>
+      <p class="logo">
+        <a href="<?php home_url(); ?>" class="flex items-center space-x-3 rtl:space-x-reverse m-2">
+          <img id="myLogo" class="logo-image  rounded-full mx-auto" src="https://golafrooz.com/wp-content/uploads/2024/04/golafrooz.png" alt="logo">
+          <span class="self-center text-sm lg:text-2xl font-semibold whitespace-nowrap text-white">GOLAFROOZ CO</span>
+        </a>
+      </p>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul class="nav__links flex flex-col lg:flex-row-reverse">
+        <li><a class="active" href="<?php echo home_url(); ?>">صفحه اصلی</a></li>
+        <li><a href="<?php echo home_url()."/گلخانه ها/"; ?>">گلخانه ها</a></li>
+        <li><a href="<?php echo home_url()."/محصولات/"; ?>">محصولات</a></li>
+        <li><a href="<?php echo home_url()."/خدمات/"; ?>">خدمات</a></li>
+        <li><a href="<?php echo home_url()."/گالری/"; ?>">گالری</a></li>
+        <li><a href="<?php echo home_url()."/مقالات/"; ?>">مقالات</a></li>
+        <li><a href="<?php echo home_url()."/تماس با ما/"; ?>">ارتباط با ما</a></li>
+        <li><a href="#" id="color-changing-button" class="block w-1/2 md:hidden text-sm md:text-xl rounded-lg bg-blue-700 px-6 py-2 md:px-12 md:py-4 text-center font-bold text-black hover:bg-blue-900">محصولات و تجهیزات</a></li>
+      </ul>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          function changeButtonColor(buttonId) {
+            const button = document.getElementById(buttonId);
+            if (button) {
               setInterval(() => {
-                const button = document.getElementById('color-changing-button');
                 if (button.classList.contains('blue')) {
                   button.classList.remove('blue');
                   button.classList.add('green');
@@ -182,12 +357,24 @@
                   button.classList.add('blue');
                 }
               }, 2000);
-            </script>
-            <button id="color-changing-button" class="text-sm md:text-xl rounded-lg bg-blue-700 px-12 py-4 text-center font-bold text-black hover:bg-blue-900">محصولات و تجهیزات</button>
-          </div>
-        </div>
-      </nav>
+            }
+          }
+
+          changeButtonColor('color-changing-button');
+          changeButtonColor('color-changing');
+        });
+      </script>
+
+      <button href="#" id="color-changing" class="hidden md:block text-sm md:text-xl rounded-lg bg-blue-700 px-12 py-4 text-center font-bold text-black hover:bg-blue-900">محصولات و تجهیزات</button>
+
+    </header>
+    <div class="w-full h-[20vh] bg-red-100">
+      header
     </div>
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+
+
+
     <div class=" mx-10 md:mx-0"></div>
     <style>
   @keyframes wiggle {
@@ -227,4 +414,4 @@
         </div>
       </a>
     </div>
-  </header>
+  </div>

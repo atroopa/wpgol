@@ -177,55 +177,61 @@
     </div>
   </div>
 
-  <div class="m-1 h-600 bg-red-100 w-full">
+  <div class="m-1 h-100 md:h-300 bg-red-100 w-full">
   </div>
   <!-- ------------------------------------------------------------------- -->
-  <section class="relative flex h-800 w-full isolate items-center justify-center overflow-hidden py-24 sm:py-32">
-  <video src="<?php echo get_template_directory_uri().'/img/video/robot-4.mp4' ?>" autoplay loop playsinline muted class="absolute left-0 top-0 z-0 h-full w-full object-cover"></video>
-  <div class="absolute inset-0 z-10 backdrop-blur bg-gray/30  p-5 rounded-2xl"></div>
-  <div class="z-20 text-right">
-  <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
-      <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-    </div>
-    <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
-      <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-    </div>
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">شرکت گلخانه سازی گل افروز</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-900 font-bold">
-        شرکت گل‌افروز پس از سال‌ها فعالیت در زمینه ساخت گلخانه‌های مدرن و صنعتی در سال ۱۳۹۸ با شماره ۴۴۶۲۳ در تهران بزرگ به ثبت رسید. این شرکت در طول بیش از یک دهه فعالیت، سالانه مساحتی بالغ بر ۹۵ هکتار از اراضی کشورمان را به گلخانه‌های صنعتی و مدرن تبدیل نموده است. همچنین، از مرحله طراحی تا عرضه محصولات، با بالاترین کیفیت ممکن، تجهیزات و سازه‌های گلخانه‌ای را تولید نموده و در بازارهای داخلی و خارجی فعالیت موثر و موفقی داشته است.     
-      </p>
-      </div>
-      <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-        <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 font-bold text-gray-900 sm:grid-cols-2 md:flex lg:gap-x-10">
-          <a href="#"><span class="p-1">⇚</span>قبل از هرچیزی بخوانید </a>
-          <a href="#"><span class="p-1">⇚</span>نکات مهم گلخانه سازی</a>
-          <a href="#"><span class="p-1">⇚</span>چرا مشاوره مهم است</a>
-          <a href="#"><span class="p-1">⇚</span>چه چیزی مناسب اقلیم شماست</a>
+  <section class="relative flex h-[100vh] md:h-[500px] w-full isolate items-center justify-center overflow-hidden py-5 md:py-10 video-container">
+    <video src="<?php echo get_template_directory_uri().'/img/video/robot-4.mp4' ?>" autoplay loop playsinline muted class="absolute left-0 top-0 z-0 h-[50vh] md:h-full w-full object-cover"></video>
+    <div class="absolute inset-0 z-10 backdrop-blur bg-gray/30  p-5 rounded-2xl h-[50vh] md:h-full"></div>
+    <div class="z-20 text-right">
+      <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+        aria-hidden="true">
+        <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
         </div>
-        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-900 font-bold">بهترین طرح ها را داریم</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-900">پیشرو</dd>
+      </div>
+      <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+        aria-hidden="true">
+        <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+        </div>
+      </div>
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+          <h2 class="text-sm md:text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">شرکت گلخانه سازی گل افروز</h2>
+          <p class="mt-6 text-sm md:text-lg leading-8 text-gray-900 font-bold">
+            شرکت گل‌افروز پس از سال‌ها فعالیت در زمینه ساخت گلخانه‌های مدرن و صنعتی در سال ۱۳۹۸ با شماره ۴۴۶۲۳ در تهران بزرگ به ثبت رسید. این شرکت در طول بیش از یک دهه فعالیت، سالانه مساحتی بالغ بر ۹۵ هکتار از اراضی کشورمان را به گلخانه‌های صنعتی و مدرن تبدیل نموده است. همچنین، از مرحله طراحی تا عرضه محصولات، با بالاترین کیفیت ممکن، تجهیزات و سازه‌های گلخانه‌ای را تولید نموده و در بازارهای داخلی و خارجی فعالیت موثر و موفقی داشته است.
+          </p>
+        </div>
+        <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+          <div class="text-sm md:text-xl grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 font-bold text-gray-900 sm:grid-cols-2 md:flex lg:gap-x-10">
+            <a href="#"><span class="p-1">⇚</span>قبل از هرچیزی بخوانید </a>
+            <a href="#"><span class="p-1">⇚</span>نکات مهم گلخانه سازی</a>
+            <a href="#"><span class="p-1">⇚</span>چرا مشاوره مهم است</a>
+            <a href="#"><span class="p-1">⇚</span>چه چیزی مناسب اقلیم شماست</a>
           </div>
-          <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-900 font-bold">در هرکجای ایران </dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-900">وسیع</dd>
-          </div>
-          <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-900 font-bold">بیشتریم بهره وری</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-900">خلاق</dd>
-          </div>
-          <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-900 font-bold">انتخاب همیشه شما خواهیم شد</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-900">مسئول</dd>
-          </div>
-        </dl>
+          <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="flex flex-col-reverse">
+              <dt class="hidden md:text-base leading-7 text-gray-900 font-bold">بهترین طرح ها را داریم</dt>
+              <dd class="hidden md:text-2xl font-bold leading-9 tracking-tight text-900">پیشرو</dd>
+            </div>
+            <div class="flex flex-col-reverse">
+              <dt class="hidden md:text-base leading-7 text-gray-900 font-bold">در هرکجای ایران </dt>
+              <dd class="hidden md:text-2xl font-bold leading-9 tracking-tight text-900">وسیع</dd>
+            </div>
+            <div class="flex flex-col-reverse">
+              <dt class="hidden md:text-base leading-7 text-gray-900 font-bold">بیشتریم بهره وری</dt>
+              <dd class="hidden md:text-2xl font-bold leading-9 tracking-tight text-900">خلاق</dd>
+            </div>
+            <div class="flex flex-col-reverse">
+              <dt class="hidden md:text-base leading-7 text-gray-900 font-bold">انتخاب همیشه شما خواهیم شد</dt>
+              <dd class="hidden md:text-2xl font-bold leading-9 tracking-tight text-900">مسئول</dd>
+            </div>
+          </dl>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- <div>------------------نمونه کار-----------------</div> -->
@@ -233,17 +239,17 @@
 
   <div class="m-16 bg-red-100 w-full">
   </div>
-  <div class=" flex flex-row justify-center items-center text-2xl font-bold p-10 w-full">
-    <div class="px-3"> ----------------------------------- </div>
+  <div class=" flex flex-row justify-center items-center text-lg md:text-2xl font-bold p-10 w-full">
+    <div class="px-3 hidden md:block"> ----------------------------------- </div>
      محصولات
-    <div class="px-3"> ----------------------------------- </div>
+    <div class="px-3 hidden md:block"> ----------------------------------- </div>
   </div>
   <?PHP get_template_part("inc/product", "boxes"); ?>
 
-  <div class="flex flex-row justify-center items-center text-2xl font-bold p-10 w-full">
-    <div class="px-3"> ----------------------------------- </div>
+  <div class="flex flex-row justify-center items-center text-lg md:text-2xl font-bold p-10 w-full">
+    <div class="px-3 hidden md:block "> ----------------------------------- </div>
      وبلاگ
-    <div class="px-3"> ----------------------------------- </div>
+    <div class="px-3 hidden md:block "> ----------------------------------- </div>
   </div>
 
   <?PHP get_template_part("inc/index", "blog"); ?>
