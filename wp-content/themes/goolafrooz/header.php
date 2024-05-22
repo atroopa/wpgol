@@ -211,6 +211,7 @@
       font-size: 18px;
       font-weight: 600;
       display: flex;
+      font-weight: bold;
       /* Flex container for logo and text */
       align-items: center;
       /* Center items vertically */
@@ -285,6 +286,7 @@
   .navbar .nav__links li {
     display: block;
     margin-top: 40px;
+    font-weight: bold;
   }
 
   .navbar .menu-btn {
@@ -336,7 +338,7 @@
       <label for="click" class="menu-btn">
         <i class="fas fa-bars"></i>
       </label>
-      <ul class="nav__links flex flex-col lg:flex-row-reverse">
+      <ul class=" nav__links flex flex-col lg:flex-row-reverse">
         <li><a class="active" href="<?php echo home_url(); ?>">صفحه اصلی</a></li>
         <li><a href="<?php echo home_url()."/گلخانه ها/"; ?>">گلخانه ها</a></li>
         <li><a href="<?php echo home_url()."/محصولات/"; ?>">محصولات</a></li>
