@@ -107,9 +107,7 @@
       <span class="block opacity-75 mb-1 text-right">راهنمای</span>
       <div class="flex justify-between">
         <span class="block font-semibold text-l p-1">گلخانه اسپانیایی تیپ یک</span>
-        <a href="<?php echo home_url()."/گلخانه ها/"; ?>">
-          <span class="block bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">بیشتر</span>
-        </a>
+          <a href="<?php echo home_url()."/گلخانه ها/"; ?>" class="block bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">بیشتر</a>
       </div>
     </div>
   </div>
@@ -127,9 +125,7 @@
       <span class="block opacity-75 mb-1 text-right">راهنمای</span>
       <div class="flex justify-between">
         <span class="block font-semibold text-l p-1">گلخانه اسپانیایی تیپ دو</span>
-        <a href="<?php echo home_url()."/گلخانه ها/"; ?>">
-          <span class="block bg-white rounded-full text-teal-500 text-xs font-bold px-3 py-2 leading-none flex items-center">بیشتر</span>
-        </a>
+        <a href="<?php echo home_url()."/گلخانه ها/"; ?>" class="block bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">بیشتر</a>
       </div>
     </div>
   </div>
@@ -149,9 +145,7 @@
       <span class="block opacity-75 mb-1 text-right">راهنمای</span>
       <div class="flex justify-between">
         <span class="block font-semibold text-l p-1 ">گلخانه شیشه ای هلندی</span>
-        <a href="<?php echo home_url()."/گلخانه ها/"; ?>">
-          <span class="block bg-white rounded-full text-amber-500 text-xs font-bold px-3 py-2 leading-none flex items-center">بیشتر</span>
-        </a>
+        <a href="<?php echo home_url()."/گلخانه ها/"; ?>" class="block bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">بیشتر</a>
       </div>
     </div>
   </div>
@@ -170,9 +164,7 @@
       <span class="block opacity-75 mb-1 text-right">راهنمای</span>
       <div class="flex justify-between">
         <span class="block font-semibold text-l ">گلخانه تونلی</span>
-        <a href="<?php echo home_url()."/گلخانه ها/"; ?>">
-          <span class="block bg-white rounded-full text-pink-500 text-xs font-bold px-3 py-2 leading-none flex items-center">بیشتر</span>
-        </a>
+        <a href="<?php echo home_url()."/گلخانه ها/"; ?>" class="block bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">بیشتر</a>
       </div>
     </div>
   </div>
@@ -317,11 +309,12 @@
   </h1>
   <div class="mx-auto max-w-6xl px-6 p-8 ">
     <div class="flex">
-      <div class="group relative h-96 w-24 hover:w-[8rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
+      <div class="group relative h-96 w-24 hover:w-[6rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
         <img src="<?php echo get_template_directory_uri().'/img/front-gallery/1.webp' ?>" alt="golafrooz"  class="h-full max-w-300 object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all" alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
             <div class="flex gap-3 text-white">
+            <a href="<?php echo home_url()."/گالری/"; ?>">
               <svg width="48" height="48" viewBox="0 0 32 32">
                 <path d="M11 2H2v9h2V4h7V2z" fill="currentColor" />
                 <path d="M2 21v9h9v-2H4v-7H2z" fill="currentColor" />
@@ -329,6 +322,7 @@
                 <path d="M21 30h9v-9h-2v7h-7v2z" fill="currentColor" />
                 <path d="M25.49 10.131-9-5a1 1 0 0 0-1 01-9 5A 1 0 0 0 6 11v10a1 1 0 0 0 .51.8719 5a1 1 0 0 0 .51.8719 5a1 1 0 0 0 1 0919-5A1 1 0 0 0" fill="currentColor" />
               </svg>
+              </a>
               <div>
                 <p class="hidden md:block font-semibold text-xl text-gray-100">گل افروز، سرزمین گل‌های شاداب!</p>
                 <p class="hidden md:block text-gray-300">Better Design</p>
@@ -339,11 +333,12 @@
           </div>
         </div>
       </div>
-      <div class="group relative h-96 w-24  hover:w-[8rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
+      <div class="group relative h-96 w-24  hover:w-[6rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
         <img src="<?php echo get_template_directory_uri().'/img/front-gallery/2.webp' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8 ">
             <div class="flex gap-3 text-white">
+            <a href="<?php echo home_url()."/گالری/"; ?>">
               <svg width="48" height="48" viewBox="0 0 32 32">
                 <path d="M11 2H2v9h2V4h7V2z" fill="currentColor" />
                 <path d="M2 21v9h9v-2H4v-7H2z" fill="currentColor" />
@@ -351,6 +346,7 @@
                 <path d="M21 30h9v-9h-2v7h-7v2z" fill="currentColor" />
                 <path d="M25.49 10.131-9-5a1 1 0 0 0-1 01-9 5A 1 0 0 0 6 11v10a1 1 0 0 0 .51.8719 5a1 1 0 0 0 .51.8719 5a1 1 0 0 0 1 0919-5A1 1 0 0 0" fill="currentColor" />
               </svg>
+              </a>
               <div>
                 <p class="hidden md:block font-semibold text-xl text-gray-100">گل افروز، انتخابی ایده‌آل برای عاشقان گل و گیاه</p>
                 <p class="hidden md:block text-gray-300">Better Design</p>
@@ -358,16 +354,17 @@
               </div>
             </div>
             <div class="flex justify-end gap-3 text-gray-200">
-              svg place
+              
             </div>
           </div>
         </div>
       </div>
-      <div class="group relative h-96 w-24  hover:w-[8rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
+      <div class="group relative h-96 w-24  hover:w-[6rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
         <img src="<?php echo get_template_directory_uri().'/img/front-gallery/3.webp' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
             <div class="flex gap-3 text-white content-end items-end">
+            <a href="<?php echo home_url()."/گالری/"; ?>">
               <svg width="48" height="48" viewBox="0 0 32 32">
                 <path d="M11 2H2v9h2V4h7V2z" fill="currentColor" />
                 <path d="M2 21v9h9v-2H4v-7H2z" fill="currentColor" />
@@ -375,6 +372,7 @@
                 <path d="M21 30h9v-9h-2v7h-7v2z" fill="currentColor" />
                 <path d="M25.49 10.131-9-5a1 1 0 0 0-1 01-9 5A 1 0 0 0 6 11v10a1 1 0 0 0 .51.8719 5a1 1 0 0 0 .51.8719 5a1 1 0 0 0 1 0919-5A1 1 0 0 0" fill="currentColor" />
               </svg>
+              </a>
               <div>
                 <p class="hidden md:block font-semibold text-xl text-gray-100">گلخانه سازی گل افروز، متخصص طراحی و ساخت گلخانه‌های رویایی</p>
                 <p class="hidden md:block text-gray-300">Better Design</p>
@@ -384,11 +382,12 @@
           </div>
         </div>
       </div>
-      <div class="hidden lg:block group relative h-96 w-24 hover:w-[8rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
+      <div class="hidden lg:block group relative h-96 w-24 hover:w-[6rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
         <img src="<?php echo get_template_directory_uri().'/img/front-gallery/5.webp' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
             <div class="flex gap-3 text-white">
+            <a href="<?php echo home_url()."/گالری/"; ?>">
               <svg width="48" height="48" viewBox="0 0 32 32">
                 <path d="M11 2H2v9h2V4h7V2z" fill="currentColor" />
                 <path d="M2 21v9h9v-2H4v-7H2z" fill="currentColor" />
@@ -396,6 +395,7 @@
                 <path d="M21 30h9v-9h-2v7h-7v2z" fill="currentColor" />
                 <path d="M25.49 10.131-9-5a1 1 0 0 0-1 01-9 5A 1 0 0 0 6 11v10a1 1 0 0 0 .51.8719 5a1 1 0 0 0 .51.8719 5a1 1 0 0 0 1 0919-5A1 1 0 0 0" fill="currentColor" />
               </svg>
+              </a>
               <div>
                 <p class="hidden md:block font-semibold text-xl text-gray-100">گل افروز، جایی که گل‌ها به شکوفایی می‌رسند</p>
                 <p class="hidden md:block text-gray-300">Better Design</p>
@@ -406,11 +406,12 @@
           </div>
         </div>
       </div>
-      <div class="hidden lg:block group relative h-96 w-24 hover:w-[8rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
+      <div class="hidden lg:block group relative h-96 w-24 hover:w-[6rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
         <img src="<?php echo get_template_directory_uri().'/img/front-gallery/4.webp' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
             <div class="flex gap-3 text-white">
+              <a href="<?php echo home_url()."/گالری/"; ?>">
               <svg width="48" height="48" viewBox="0 0 32 32">
                 <path d="M11 2H2v9h2V4h7V2z" fill="currentColor" />
                 <path d="M2 21v9h9v-2H4v-7H2z" fill="currentColor" />
@@ -418,6 +419,7 @@
                 <path d="M21 30h9v-9h-2v7h-7v2z" fill="currentColor" />
                 <path d="M25.49 10.131-9-5a1 1 0 0 0-1 01-9 5A 1 0 0 0 6 11v10a1 1 0 0 0 .51.8719 5a1 1 0 0 0 .51.8719 5a1 1 0 0 0 1 0919-5A1 1 0 0 0" fill="currentColor" />
               </svg>
+              </a>
               <div>
                 <p class="hidden md:block font-semibold text-xl text-gray-100">با گل افروز، به طبیعت نزدیک‌تر شوید</p>
                 <p class="hidden md:block text-gray-300">Better all Design</p>
