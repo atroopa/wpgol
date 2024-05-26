@@ -374,7 +374,7 @@
       <button href="<?php echo home_url()."/محصولات/"; ?>" id="color-changing" class="hidden md:block text-sm md:text-xl rounded-lg bg-blue-700 px-12 py-4 text-center font-bold text-black hover:bg-blue-900">محصولات و تجهیزات</button>
 
     </header>
-    <div class="w-full h-[17vh] bg-red-100">
+    <div class="w-full h-[18vh] md:h-[23vh] bg-red-100">
       header
     </div>
   </div>
