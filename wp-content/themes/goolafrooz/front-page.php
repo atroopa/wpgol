@@ -177,10 +177,10 @@
     </div>
   </div>
 
-  <div class="m-1 h-100 md:h-300 bg-red-100 w-full">
+  <div class="m-1 h-100 md:h-300  w-full">
   </div>
   <!-- ------------------------------------------------------------------- -->
-  <section class="relative flex h-[100vh] md:h-[500px] w-full isolate items-center justify-center overflow-hidden py-5 md:py-10 video-container">
+  <section class=" relative flex h-[100vh] md:h-[500px] w-full isolate items-center justify-center overflow-hidden py-5 md:py-10 video-container">
     <video src="<?php echo get_template_directory_uri().'/img/video/robot-4.mp4' ?>" autoplay loop playsinline muted class="absolute left-0 top-0 z-0 h-[50vh] md:h-full w-full object-cover"></video>
     <div class="absolute inset-0 z-10 backdrop-blur bg-gray/30  p-5 rounded-2xl h-[50vh] md:h-full"></div>
     <div class="z-20 text-right">
@@ -203,16 +203,16 @@
             شرکت گل‌افروز پس از سال‌ها فعالیت در زمینه ساخت گلخانه‌های مدرن و صنعتی در سال ۱۳۹۸ با شماره ۴۴۶۲۳ در تهران بزرگ به ثبت رسید. این شرکت در طول بیش از یک دهه فعالیت، سالانه مساحتی بالغ بر ۹۵ هکتار از اراضی کشورمان را به گلخانه‌های صنعتی و مدرن تبدیل نموده است. همچنین، از مرحله طراحی تا عرضه محصولات، با بالاترین کیفیت ممکن، تجهیزات و سازه‌های گلخانه‌ای را تولید نموده و در بازارهای داخلی و خارجی فعالیت موثر و موفقی داشته است.
           </p>
         </div>
-        <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+        <div class="mx-auto mt-2 max-w-2xl lg:mx-0 lg:max-w-none">
           <div class="text-sm md:text-xl grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 font-bold text-gray-900 sm:grid-cols-2 md:flex lg:gap-x-10">
             <a href="#"><span class="p-1">⇚</span>قبل از هرچیزی بخوانید </a>
             <a href="#"><span class="p-1">⇚</span>نکات مهم گلخانه سازی</a>
             <a href="#"><span class="p-1">⇚</span>چرا مشاوره مهم است</a>
             <a href="#"><span class="p-1">⇚</span>چه چیزی مناسب اقلیم شماست</a>
           </div>
-          <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+          <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-2 sm:grid-cols-2 lg:grid-cols-4">
             <div class="flex flex-col-reverse">
-              <dt class="hidden md:text-base leading-7 text-gray-900 font-bold">بهترین طرح ها را داریم</dt>
+              <dt class=" md:text-base leading-7 text-gray-900 font-bold">بهترین طرح ها را داریم</dt>
               <dd class="hidden md:text-2xl font-bold leading-9 tracking-tight text-900">پیشرو</dd>
             </div>
             <div class="flex flex-col-reverse">
@@ -237,7 +237,7 @@
   <!-- <div>------------------نمونه کار-----------------</div> -->
 
 
-  <div class="m-16 bg-red-100 w-full">
+  <div class="m-5 w-full">
   </div>
   <div class=" flex flex-row justify-center items-center text-lg md:text-2xl font-bold p-10 w-full">
     <div class="px-3 hidden md:block"> ----------------------------------- </div>
@@ -255,10 +255,10 @@
   <?PHP get_template_part("inc/index", "blog"); ?>
 
   <!-- <div>-----------------------------------------------</div> -->
-  <section class="container p-10 mx-auto text-right ">
-    <div class="container mx-auto bg-card p-10 rounded-large shadow-2xl">
-      <h2 class="px-4 text-2xl lg:text-6xl pt-16 pb-4 mb-2 text-black font-bold font-roboto">کاتالوگ</h2>
-      <p class="px-4 text-sm lg:text-2xl text-black pb-16 md:pr-10 font-roboto">
+  <section class="container p-4 mx-auto text-right ">
+    <div class="container mx-auto bg-card p-4 rounded-large shadow-2xl">
+      <h2 class="px-4 text-2xl lg:text-6xl pt-4 pb-4 mb-2 text-black font-bold font-roboto">کاتالوگ</h2>
+      <p class="px-4 text-sm lg:text-2xl text-black pb-4 md:pr-10 font-roboto">
         تمامی کاتالوگ هایی که در این بخش قرار گرفته توسط شرکت گل افروز طراحی و جهت افزایش دانش گلخانه سازان عزیز خدمت شما ارائه شده است و شامل انواع سازه نمونه کار ، انواع سازه گلخانه، تجهیزات و اطلاعات تکمیلی در مورد گلخانه می باشد.
       </p>
       <div class="flex items-end justify-end  ">
@@ -272,10 +272,10 @@
 </div>
 </section>
 
-<section class="container p-10 mx-auto text-right">
+<section class="container p-4 mx-auto text-right">
   <div class="bg-gray-100 bg-card-b p-6 rounded-large shadow-2xl">
-    <h2 class="px-4 text-2xl lg:text-6xl font-medium pt-16 pb-6 mb-2 font-roboto text-white">قرار داد</h2>
-    <p class="px-4 text-sm lg:text-2xl text-white pb-16 font-roboto">
+    <h2 class="px-4 text-2xl lg:text-6xl font-medium pt-4 pb-4 mb-2 font-roboto text-white">قرار داد</h2>
+    <p class="px-4 text-sm lg:text-2xl text-white pb-4 md:pr-10 font-roboto">
       برای شروع ساخت گلخانه باید هزینه های مربوط به ساخت سازه و تجهیز کردن ان براورد شود که ما دراین بخش هزینه های مربوط به ساخت سازه و و تجهیز ان (صفرتا صد ) انواع سازه گلخانه را برآورد کرده ایم تا شما با آگاهی بیشتری سازه ی مد نظرتان را انتخاب کنید .
     </p>
     <div class="flex items-end justify-end  ">
@@ -317,8 +317,8 @@
   </h1>
   <div class="mx-auto max-w-6xl px-6 p-8 ">
     <div class="flex">
-      <div class="group relative h-96 w-24  hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
-        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/1.webp' ?>" alt="golafrooz"  class="h-full max-w-300 object-cover group-hover:rotate-12 group-hover:scale-125 transition-all" alt="green house" />
+      <div class="group relative h-96 w-24 hover:w-[8rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
+        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/1.webp' ?>" alt="golafrooz"  class="h-full max-w-300 object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all" alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
             <div class="flex gap-3 text-white">
@@ -330,8 +330,8 @@
                 <path d="M25.49 10.131-9-5a1 1 0 0 0-1 01-9 5A 1 0 0 0 6 11v10a1 1 0 0 0 .51.8719 5a1 1 0 0 0 .51.8719 5a1 1 0 0 0 1 0919-5A1 1 0 0 0" fill="currentColor" />
               </svg>
               <div>
-                <p class="font-semibold text-xl text-gray-100">گل افروز، سرزمین گل‌های شاداب!</p>
-                <p class="text-gray-300">Better Design</p>
+                <p class="hidden md:block font-semibold text-xl text-gray-100">گل افروز، سرزمین گل‌های شاداب!</p>
+                <p class="hidden md:block text-gray-300">Better Design</p>
                 </div1>
               </div>
             </div>
@@ -339,8 +339,8 @@
           </div>
         </div>
       </div>
-      <div class="group relative h-96 w-24  hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
-        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/2.webp' ?>" class="h-full object-cover group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
+      <div class="group relative h-96 w-24  hover:w-[8rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
+        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/2.webp' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8 ">
             <div class="flex gap-3 text-white">
@@ -352,8 +352,8 @@
                 <path d="M25.49 10.131-9-5a1 1 0 0 0-1 01-9 5A 1 0 0 0 6 11v10a1 1 0 0 0 .51.8719 5a1 1 0 0 0 .51.8719 5a1 1 0 0 0 1 0919-5A1 1 0 0 0" fill="currentColor" />
               </svg>
               <div>
-                <p class="font-semibold text-xl text-gray-100">گل افروز، انتخابی ایده‌آل برای عاشقان گل و گیاه</p>
-                <p class="text-gray-300">Better Design</p>
+                <p class="hidden md:block font-semibold text-xl text-gray-100">گل افروز، انتخابی ایده‌آل برای عاشقان گل و گیاه</p>
+                <p class="hidden md:block text-gray-300">Better Design</p>
                 </div1>
               </div>
             </div>
@@ -363,8 +363,8 @@
           </div>
         </div>
       </div>
-      <div class="group relative h-96 w-24  hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
-        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/3.webp' ?>" class="h-full object-cover group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
+      <div class="group relative h-96 w-24  hover:w-[8rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
+        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/3.webp' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
             <div class="flex gap-3 text-white content-end items-end">
@@ -376,16 +376,16 @@
                 <path d="M25.49 10.131-9-5a1 1 0 0 0-1 01-9 5A 1 0 0 0 6 11v10a1 1 0 0 0 .51.8719 5a1 1 0 0 0 .51.8719 5a1 1 0 0 0 1 0919-5A1 1 0 0 0" fill="currentColor" />
               </svg>
               <div>
-                <p class="font-semibold text-xl text-gray-100">گلخانه سازی گل افروز، متخصص طراحی و ساخت گلخانه‌های رویایی</p>
-                <p class="text-gray-300">Better Design</p>
+                <p class="hidden md:block font-semibold text-xl text-gray-100">گلخانه سازی گل افروز، متخصص طراحی و ساخت گلخانه‌های رویایی</p>
+                <p class="hidden md:block text-gray-300">Better Design</p>
                 </div1>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="hidden lg:block group relative h-96 w-24 hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
-        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/5.webp' ?>" class="h-full object-cover group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
+      <div class="hidden lg:block group relative h-96 w-24 hover:w-[8rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
+        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/5.webp' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
             <div class="flex gap-3 text-white">
@@ -397,8 +397,8 @@
                 <path d="M25.49 10.131-9-5a1 1 0 0 0-1 01-9 5A 1 0 0 0 6 11v10a1 1 0 0 0 .51.8719 5a1 1 0 0 0 .51.8719 5a1 1 0 0 0 1 0919-5A1 1 0 0 0" fill="currentColor" />
               </svg>
               <div>
-                <p class="font-semibold text-xl text-gray-100">گل افروز، جایی که گل‌ها به شکوفایی می‌رسند</p>
-                <p class="text-gray-300">Better Design</p>
+                <p class="hidden md:block font-semibold text-xl text-gray-100">گل افروز، جایی که گل‌ها به شکوفایی می‌رسند</p>
+                <p class="hidden md:block text-gray-300">Better Design</p>
                 </div1>
               </div>
             </div>
@@ -406,8 +406,8 @@
           </div>
         </div>
       </div>
-      <div class="hidden lg:block group relative h-96 w-24 hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
-        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/4.webp' ?>" class="h-full object-cover group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
+      <div class="hidden lg:block group relative h-96 w-24 hover:w-[8rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
+        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/4.webp' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
             <div class="flex gap-3 text-white">
@@ -419,8 +419,8 @@
                 <path d="M25.49 10.131-9-5a1 1 0 0 0-1 01-9 5A 1 0 0 0 6 11v10a1 1 0 0 0 .51.8719 5a1 1 0 0 0 .51.8719 5a1 1 0 0 0 1 0919-5A1 1 0 0 0" fill="currentColor" />
               </svg>
               <div>
-                <p class="font-semibold text-xl text-gray-100">با گل افروز، به طبیعت نزدیک‌تر شوید</p>
-                <p class="text-gray-300">Better all Design</p>
+                <p class="hidden md:block font-semibold text-xl text-gray-100">با گل افروز، به طبیعت نزدیک‌تر شوید</p>
+                <p class="hidden md:block text-gray-300">Better all Design</p>
                 </div1>
               </div>
             </div>

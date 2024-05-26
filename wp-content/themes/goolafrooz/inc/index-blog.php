@@ -25,7 +25,7 @@ if ( is_front_page() ) {
                             <div href="#" class="mb-2 inline-block text-lg font-bold text-gray-100 "><?php the_title(); ?></div>
                             <div class="px-1 text-gray-100 text-sm"><?php echo get_the_date(); ?></div>
                             <div class="text-gray-100">
-                                <p class="text-sm p-2"><?php the_excerpt(); ?></p>
+                                <p class="text-sm p-2"><?php echo wp_trim_words(get_the_excerpt(), 10); ?></p>
                             </div>
                         </div>
                         <div class="flex items-center">
