@@ -35,7 +35,7 @@
     </div>
 
     <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
-    <div class="mx-6 py-5 text-center md:text-left backdrop-blur-lg bg-white/30  p-5 rounded-2xl">
+    <div class="mx-0 md:mx-6 py-5 text-center md:text-left backdrop-blur-lg bg-white/30  p-5 rounded-2xl">
       <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <!-- Contact section -->
         <div>
@@ -79,7 +79,7 @@
 
         </div>
         <!-- Products section -->
-        <div class="items-center justify-center">
+        <div class="hidden md:block items-center justify-center">
           <h6 class="mb-4 flex flex-col items-start justify-start font-semibold uppercase md:justify-center">
             محصولات
           </h6>
@@ -91,7 +91,7 @@
           )); ?>
         </div>
         <!-- Useful links section -->
-        <div class="items-start justify-center">
+        <div class="hidden md:block items-start justify-center">
           <h6 class="mb-4 flex flex-col items-start justify-start font-semibold uppercase md:justify-center">
             خدمات
           </h6>
@@ -104,7 +104,7 @@
         </div>
 
         <!-- TW Elements section -->
-        <div class="">
+        <div class="hidden md:block">
           <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
             <span class="me-3 [&>svg]:h-4 [&>svg]:w-4">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -121,7 +121,7 @@
           </p>
         </div>
       </div>
-      <div class="flex flex-col items-center justify-center">
+      <div class=" hidden md:block flex flex-col items-center justify-center">
       <div class=" mb-4 flex flex-col items-start justify-start font-semibold uppercase md:justify-center">
           <img src="<?php echo get_template_directory_uri().'/img/slider//icons/enamad.png' ?>" alt="Your Logo" class="h-20 w-20" />
         </div>
