@@ -49,12 +49,12 @@ get_header();
 </div>
 <!-- ---------------------------------------------------------- -->
 <!-- inspired by tailwindcss.com -->
-<ul class="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
+<ul class="w-full grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
     <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
         <div class="order-1 sm:ml-6 xl:ml-0">
             <h3 class="mb-1 text-slate-900 font-semibold">
                 <span class="mb-1 block text-sm leading-6 text-indigo-500">معماری سازه ها</span>
-                سازه های مدرن و حرفه ای شرکت گلخانه سازی گل افروز 
+                سازه های مدرن و حرفه ای شرکت گلخانه سازی گل افروز
             </h3>
             <div class="prose prose-slate prose-sm text-slate-600">
                 <p>آیا می دانستید که سازه ی های مدرن تاثیر بسیار زیادی در کیفیت و کمیت تولید محصولات کشاورزی شما دارد . شرکت گلخانه سازی گل افروز با ارائه بهترین طرح ها و مصالح اماده ارائه خدمات نوین به شما کشاورزان عزیز می باشد. </p>
