@@ -29,18 +29,13 @@ get_header();
                     با ما خواهید فهمید که از کجا شروع کنید و چه گلخانه و مصالحه ای مناسب اقلیم شهر شماست! 
                 </p>
                 <div class="flex flex-wrap justify-center gap-6">
-                    <a href="#"
+                    <a href="<?php echo home_url()."/مشاوران/"; ?>"
                         class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-gray-900 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
                         <span class=" relative text-base font-semibold text-white dark:text-dark">
                             تماس با مشاوران
                         </span>
                     </a>
-                    <a href="#"
-                        class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-gray-900 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
-                        <span class=" relative text-base font-semibold text-white dark:text-dark">
-                            درخواست مشاوره
-                        </span>
-                    </a>
+
                 </div>
             </div>
         </div>
