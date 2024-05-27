@@ -2,9 +2,9 @@
 
 
 <footer class="relative  text-center font-bold text-brown lg:text-left ">
-  <div class="bg-contain  bg-no-repeat md:bg-cover bg-center w-full h-max-screen md:h-full "
+  <div class="bg-cover bg-no-repeat md:bg-cover bg-center w-full h-max-screen md:h-full "
   style="background-image: url(<?php echo get_template_directory_uri().'/img/footer/footer-1.png' ?>)">
-    <div class="flex items-center justify-center  py-20"></div>
+    <div class="flex items-center justify-center py-5 md:py-20"></div>
     <div class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between">
       <div class="me-12 hidden lg:block backdrop-blur-2xl bg-white/30  p-5 rounded-2xl">
         <h1 class="hidden md:block bg-gradient-to-r from-red-600 via-blue-600 to-green-600 inline-block text-transparent bg-clip-text">
@@ -36,7 +36,7 @@
     </div>
 
     <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
-    <div class="mx-0 md:mx-6 py-9 text-center md:text-left backdrop-blur-lg bg-white/30  p-5 rounded-2xl">
+    <div class="mx-0 md:mx-6 py-3 text-center md:text-left backdrop-blur-lg bg-white/30  p- rounded-2xl">
       <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <!-- Contact section -->
         <div>
