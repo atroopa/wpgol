@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<!-- component -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const slider = document.querySelector('.slider');

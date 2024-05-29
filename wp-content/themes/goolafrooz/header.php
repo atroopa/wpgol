@@ -1,8 +1,8 @@
 <html <?php language_attributes(); ?>>
 
 <head>
+  <?php wp_head(); ?>
   <meta charset="utf-8">
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/img/logo/golafrooz.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -374,7 +374,7 @@
       <button href="<?php echo home_url()."/محصولات/"; ?>" id="color-changing" class="hidden md:block text-sm md:text-xl rounded-lg bg-blue-700 px-12 py-4 text-center font-bold text-black hover:bg-blue-900">محصولات و تجهیزات</button>
 
     </header>
-    <div class="w-full h-[18vh] md:h-[23vh] bg-red-100">
+    <div class="w-full h-[18vh] md:h-[23vh] bg-gray-900">
       header
     </div>
   </div>

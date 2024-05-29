@@ -3,10 +3,10 @@
 get_header(); ?>
 
 <div class="flex flex-col items-center justify-center bg-gray-900  w-ful">
-    <h1 class="font-extrabold text-transparent text-8xl py-10 bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+    <h1 class="font-extrabold text-transparent text-4xl md:text-8xl py-10 bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
         گل افروز
     </h1>
-    <h1 class=" bg-gradient-to-r from-blue-600 via-green-500 py-5 to-indigo-400 inline-block text-transparent bg-clip-text">
+    <h1 class=" bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 px-5 py-5 items-center justify-center inline-block text-transparent bg-clip-text">
         از تمامی محصولات شرکت گلخانه سازی گل افروز دیدن بفرمایید
     </h1>
 </div>
