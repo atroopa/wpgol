@@ -3,9 +3,6 @@
 get_header();
 ?>
 
-<div class="bg-blue-100 w-full py-30">
-aa
-</div>
 <?php
 
 // دریافت عنوان سئو با استفاده از متا فیلد Yoast SEO
@@ -32,7 +29,7 @@ $focus_keyphrase = get_post_meta(get_the_ID(), '_yoast_wpseo_focuskw', true);
 
 // ارسال داده‌ها به هدر
 function custom_seo_meta_tags() {
-    global $seo_title, $meta_description;
+    global $seo_title, $meta_description, $focus_keyphrase;
     if ($seo_title) {
         echo '<title>' . $seo_title . '</title>' . "\n";
     } else {
@@ -41,17 +38,42 @@ function custom_seo_meta_tags() {
     if ($meta_description) {
         echo '<meta name="description" content="' . $meta_description . '">' . "\n";
     }
+    if($focus_keyphrase){
+        echo '<meta name="keywords" content="' . $focus_keyphrase . '">' . "\n";
+    }
 }
 add_action('wp_head', 'custom_seo_meta_tags');
 
-// نمایش داده‌ها به صورت متن ساده برای آزمایش
-echo 'Title: ' . $title . '<br>';
-echo 'Content: ' . $content . '<br>';
-echo 'Featured image address: ' . $featured_image . '<br>';
-echo 'Image alt: ' . ( $image_alt ? $image_alt : 'بدون توضیحات' ) . '<br>';
-echo 'Focus keyphrase: ' . $focus_keyphrase . '<br>';
-echo 'SEO title: ' . $seo_title . '<br>';
-echo 'Meta description: ' . $meta_description . '<br>';
+// // نمایش داده‌ها به صورت متن ساده برای آزمایش
+// echo 'Title: ' . $title . '<br>';
+// echo 'Content: ' . $content . '<br>';
+// echo 'Featured image address: ' . $featured_image . '<br>';
+// echo 'Image alt: ' . ( $image_alt ? $image_alt : 'بدون توضیحات' ) . '<br>';
+// echo 'Focus keyphrase: ' . $focus_keyphrase . '<br>';
+// echo 'SEO title: ' . $seo_title . '<br>';
+// echo 'Meta description: ' . $meta_description . '<br>';
+?>
 
+<!-- Blog post with featured image -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto">
+        <!-- Blog post header -->
+        <div class="py-8">
+            <h1 class="text-3xl font-bold mb-2"> <?php echo $title ?> </h1>
+        </div>
+
+        <!-- Featured image -->
+        <img src="<?php echo $featured_image ?>"
+             alt="<?php echo ( $image_alt ? $image_alt : 'بدون توضیحات' ) ?>"
+             class="w-full h-auto mb-8">
+
+        <!-- Blog post content -->
+        <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
+        <?php echo $content ?>
+        </div>
+    </div>
+</div>
+
+<?php
 get_footer();
 ?>
