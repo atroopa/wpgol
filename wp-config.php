@@ -84,8 +84,8 @@ define( 'WP_DEBUG', false );
 /* Add any custom values between this line and the "stop editing" line. */
 
 /** Define WP_HOME and WP_SITEURL */
-//define( 'WP_HOME', 'https://wordpress-golafrooz.chbk.run/' );
-//define( 'WP_SITEURL', 'https://wordpress-golafrooz.chbk.run/' );
+define( 'WP_HOME', 'http://localhost/wplearn/' );
+define( 'WP_SITEURL', 'http://localhost/wplearn/' );
 
 /* That's all, stop editing! Happy publishing. */
 
