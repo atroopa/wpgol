@@ -9,7 +9,6 @@ if (is_category()) {
 ?>
 
 
-
 <!-- Breadcrumb -->
 <nav class="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
   <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
@@ -81,7 +80,7 @@ if (is_category()) {
             }
         </style>
 
-        <div class="bg-gray-100 flex justify-center items-center h-screen">
+        <div class="my-20 md:my-0 bg-gray-100 flex justify-center items-center h-screen">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
                 <?php while ($cat_post->have_posts()) {

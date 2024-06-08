@@ -37,9 +37,13 @@ function custom_seo_meta_tags() {
     }
     if ($meta_description) {
         echo '<meta name="description" content="' . $meta_description . '">' . "\n";
+    } else {
+        print("<div>ERROR: meta description is not exist!</div>");
     }
     if($focus_keyphrase){
         echo '<meta name="keywords" content="' . $focus_keyphrase . '">' . "\n";
+    } else {
+        print("<div>ERROR: meta keyword is not exist !</div>");
     }
 }
 add_action('wp_head', 'custom_seo_meta_tags');
@@ -51,7 +55,7 @@ add_action('wp_head', 'custom_seo_meta_tags');
 // echo 'Image alt: ' . ( $image_alt ? $image_alt : 'بدون توضیحات' ) . '<br>';
 // echo 'Focus keyphrase: ' . $focus_keyphrase . '<br>';
 // echo 'SEO title: ' . $seo_title . '<br>';
-// echo 'Meta description: ' . $meta_description . '<br>';
+// echo 'Meta description: ' . $meta_description . '<br>';s
 ?>
 
 <!-- Blog post with featured image -->

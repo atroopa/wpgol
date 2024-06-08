@@ -354,7 +354,6 @@
               </div>
             </div>
             <div class="flex justify-end gap-3 text-gray-200">
-              
             </div>
           </div>
         </div>
@@ -443,8 +442,9 @@
     <p class="mb-6 pb-2 md:mb-12 md:pb-0 text-gray-900">تیم ما سخت در تلاش است تا بهترین را در حداقل زمان ممکن به شما رائه دهد و ما در شرکت گل افروز بی صبرانه منتظر شنیدن نظرات شما هستیم . </p>
   </div>
 
-<?php
-  include 'customers.php';
+  <?php
+ob_start();
+include 'customers.php';
 
 // بررسی آیا کوکی مربوط به گروه وجود دارد
 if (!isset($_COOKIE['random_group'])) {
@@ -459,6 +459,7 @@ if (!isset($_COOKIE['random_group'])) {
     $randomGroupIndex = $_COOKIE['random_group'];
     $currentGroup = $groups[$randomGroupIndex]['customers'];
 }
+ob_end_flush();
 ?>
 
 <div id="customer-grid" class="grid gap-6 text-center md:grid-cols-3 p-10">
