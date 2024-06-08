@@ -12,29 +12,7 @@ if ($product_posts->have_posts()) {
     <div class="overflow-x-scroll">
         <script src="https://cdn.jsdelivr.net/npm/tailwindcss-cdn@3.4.1/tailwindcss.js"></script>
         <script src="//unpkg.com/alpinejs" defer></script>
-        <div x-data="swipeCards()" x-init="
-			let isDown = false;
-			let startX;
-			let scrollLeft;
-			$el.addEventListener('mousedown', (e) => {
-			isDown = true;
-			startX = e.pageX - $el.offsetLeft;
-			scrollLeft = $el.scrollLeft;
-			});
-			$el.addEventListener('mouseleave', () => {
-			isDown = false;
-			});
-			$el.addEventListener('mouseup', () => {
-			isDown = false;
-			});
-			$el.addEventListener('mousemove', (e) => {
-			if (!isDown) return;
-			e.preventDefault();
-			const x = e.pageX - $el.offsetLeft;
-			const walk = (x - startX) * 1;
-			$el.scrollLeft = scrollLeft - walk;
-			});
-			" class="overflow-x-scroll scrollbar-hide mb-4 relative px-0.5 " style="overflow-y: hidden;">
+        <div class="overflow-x-scroll scrollbar-hide mb-4 relative px-0.5 " style="overflow-y: hidden;">
             <div class="flex snap-x snap-mandatory gap-4 " style="width: max-content;">
                 <?PHP while ($product_posts->have_posts()) {
                     $product_posts->the_post(); ?>
@@ -46,10 +24,10 @@ if ($product_posts->have_posts()) {
                                 <?PHP } ?>
                                 <div class="p-4">
                                     <h3 class="text-lg leading-6 font-bold text-gray-900"><?PHP the_title(); ?></h3>
-                                    <p class="text-gray-600 mt-2 text-sm" "><?PHP the_excerpt(); ?></p>
+                                    <p class="text-gray-600 mt-2 text-sm" "><?php echo wp_trim_words(get_the_excerpt(), 10); ?></p>
                             <div class=" flex justify-between items-center mt-4">
                                         <span class="text-2xl font-extrabold text-gray-900" x-text="'$' + card.price.toFixed(2)"></span>
-                                        <a href="<?PHP the_permalink(); ?>" class="text-white bg-gray-900 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                        <a href="<?php echo home_url()."/محصولات/"; ?>"" class="text-white bg-gray-900 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                                             <svg fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="22px" viewBox="0 0 414.287 414.287" xml:space="preserve">
                                                 <g>
                                                     <path d="M412.398,202.993L288.535,95.289c-1.502-1.305-3.591-1.699-5.463-1.027c-1.873,0.67-3.237,2.3-3.568,4.261l-8.938,52.887
