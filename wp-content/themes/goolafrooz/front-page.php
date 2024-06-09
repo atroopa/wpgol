@@ -90,7 +90,6 @@
 <!-- <div>---------------------شش-----------------------</div> -->
 
 <div class="p-1 flex flex-wrap items-center justify-center">
-
   <div class="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
     <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none" style="transform: scale(1.5); opacity: 0.1;">
       <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
@@ -128,7 +127,6 @@
       </div>
     </div>
   </div>
-
 
   <div class="flex-shrink-0 m-6 relative overflow-hidden bg-amber-500 rounded-lg max-w-xs shadow-lg">
     <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none" style="transform: scale(1.5); opacity: 0.1;">
@@ -462,14 +460,14 @@ ob_end_flush();
 
 <div id="customer-grid" class="grid gap-6 text-center md:grid-cols-3 p-10">
     <?php foreach ($currentGroup as $customer): ?>
-        <div class="block rounded-lg bg-white shadow-lg dark:bg-gray-800 dark:shadow-black/30">
+        <div class="block rounded-lg shadow-lg bg-gray-900 dark:shadow-black/30">
             <div class="h-28 overflow-hidden rounded-t-lg bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500"></div>
             <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
                 <img src="<?php echo $customer['image']; ?>" alt="<?php echo $customer['name']; ?>" />
             </div>
             <div class="p-6">
-                <h4 class="mb-4 text-2xl font-semibold"><?php echo $customer['name']; ?></h4>
-                <h2 class="mb-4 text-xl font-semibold"><?php echo $customer['city']; ?></h2>
+                <h4 class="mb-4 text-2xl font-semibold text-white"><?php echo $customer['name']; ?></h4>
+                <h2 class="mb-4 text-xl font-semibold text-white"><?php echo $customer['city']; ?></h2>
                 <hr />
                 <p class="mt-4">
                     <span class="inline-block pe-2 [&>svg]:w-5">
@@ -477,7 +475,7 @@ ob_end_flush();
                             <path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"/>
                         </svg>
                     </span>
-                    <?php echo $customer['review']; ?>
+				<div class="text-white"><?php echo $customer['review']; ?></div>
                 </p>
             </div>
         </div>

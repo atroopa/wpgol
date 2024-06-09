@@ -1,112 +1,153 @@
-<?PHP // Template Name: catalog
-
-get_header();
-
-// دریافت عنوان سئو با استفاده از متا فیلد Yoast SEO
-$seo_title = get_post_meta(get_the_ID(), '_yoast_wpseo_title', true);
-
-// دریافت توضیحات متا با استفاده از متا فیلد Yoast SEO
-$meta_description = get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true);
-
-// دریافت عنوان صفحه
-$title = get_the_title();
-
-// دریافت محتوای صفحه
-$content = get_the_content();
-
-// دریافت آدرس تصویر شاخص صفحه
-$featured_image = get_the_post_thumbnail_url();
-
-// دریافت alt تصویر (در صورت وجود)
-$image_id = get_post_thumbnail_id();
-$image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
-
-// دریافت Focus Keyphrase از Yoast SEO
-$focus_keyphrase = get_post_meta(get_the_ID(), '_yoast_wpseo_focuskw', true);
-
-// ارسال داده‌ها به هدر
-function custom_seo_meta_tags() {
-    global $seo_title, $meta_description, $focus_keyphrase;
-    if ($seo_title) {
-        echo '<title>' . $seo_title . '</title>' . "\n";
-    } else {
-        echo '<title>' . get_the_title() . '</title>' . "\n";
-    }
-    if ($meta_description) {
-        echo '<meta name="description" content="' . $meta_description . '">' . "\n";
-    } else {
-        print("<div>ERROR: meta description is not exist!</div>");
-    }
-    if($focus_keyphrase){
-        echo '<meta name="keywords" content="' . $focus_keyphrase . '">' . "\n";
-    } else {
-        print("<div>ERROR: meta keyword is not exist !</div>");
-    }
-}
-add_action('wp_head', 'custom_seo_meta_tags');
-
-// // نمایش داده‌ها به صورت متن ساده برای آزمایش
-// echo 'Title: ' . $title . '<br>';
-// echo 'Content: ' . $content . '<br>';
-// echo 'Featured image address: ' . $featured_image . '<br>';
-// echo 'Image alt: ' . ( $image_alt ? $image_alt : 'بدون توضیحات' ) . '<br>';
-// echo 'Focus keyphrase: ' . $focus_keyphrase . '<br>';
-// echo 'SEO title: ' . $seo_title . '<br>';
-// echo 'Meta description: ' . $meta_description . '<br>';s
+<?PHP //Template Name: Contact Us
 ?>
+<?php get_header(); ?>
+<script src="https://cdn.tailwindcss.com"></script>
+<section class="mb-0 md:mb-32 bg-gray-100">
+  <div id="map" class=" relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3234.6227926002107!2d51.0057053!3d35.8337295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dbf9b5e10235b%3A0xadc2aff3d54f937b!2z2KfYs9iq2KfZhiDYp9mE2KjYsdiy2Iwg2qnYsdis2Iwg2LnYuNuM2YXbjNmH2Iwg2KjZhNmI2KfYsSDYt9in2YTZgtin2YbbjCDYtNmF2KfZhNuM2Iwg2KjYsdisINmC2KfYptmF!5e0!3m2!1sfa!2s!4v1714566354377!5m2!1sfa!2s" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+  </div>
+  <div class="w-full px-0 md:px-12">
+    <div class="bg-white block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-gray-300">
+      <!-- ---------------------------- -->
+      <!-- component -->
+      <div class="py-0 md:py-16 bg-white">
+        <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+          <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+            <div class="md:5/12 lg:w-5/12">
+              <!-- <img src="<?php //echo get_template_directory_uri() . '/img/contact-us/contact-us.png' ?>" alt="image" loading="lazy" width="" height=""> -->
+              <video src="<?php echo get_template_directory_uri().'/img/video/contact-1.mp4' ?>" autoplay loop playsinline muted ></video>
+            </div>
+            <div class="md:7/12 lg:w-6/12">
+              <h2 class="text-xl md:text-2xl text-gray-900 font-bold md:text-4xl">شرکت گلخانه سازی گل افروز با هدف ارتقای سطح کشاورزی و ارائه راه‌حل‌های نوین برای کشت گل و گیاه، تأسیس شده است.</h2>
+              <p class="mt-6 text-gray-600">ما با بهره‌گیری از دانش روز دنیا، تجهیزات مدرن و هوش مصنوعی، به دنبال ایجاد گلخانه‌هایی هوشمند و پربازده هستیم که ضمن افزایش کیفیت و کمیت محصولات، به حفظ منابع طبیعی و محیط زیست نیز کمک می‌کنند.
 
-<!-- component -->
-<!--
-  Welcome to Tailwind Play, the official Tailwind CSS playground!
+                مزایای گلخانه نسبت به کشاورزی سنتی:
 
-  Everything here works just like it does when you're running Tailwind locally
-  with a real build pipeline. You can customize your config file, use features
-  like `@apply`, or even add third-party plugins.
-
-  Feel free to play with this example if you're just learning, or trash it and
-  start from scratch if you know enough to be dangerous. Have fun!
--->
-<div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
-  <div class="w-full items-center mx-auto max-w-screen-lg">
-    <div class="group grid w-full grid-cols-2">
-       <div>
-        <div class="pr-3 md:pr-12">
-          <p class="peer text-sm md:text-xl mb-6 text-gray-900">
-          <?php echo $content;?>
-        </p>
-
-          <h3 class="mb-4 font-semibold text-xl text-gray-600">برای دانلود کاتالوگ ها رو لینک مورد نظر کلیک کنید</h3>
-          <ul role="list" class="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-700">
-            <li>کاتالوگ شماره یک</li>
-            <li>کاتالوگ شماره دو</li>
-            <li>کاتالوگ شماره سه</li>
-            <li>کاتالوگ شماره یک</li>
-            <li>کاتالوگ شماره دو</li>
-            <li>کاتالوگ شماره سه</li>
-          </ul>
+                افزایش راندمان تولید: در گلخانه‌ها، شرایط محیطی به طور کامل کنترل می‌شود و این امر منجر به افزایش قابل توجه راندمان تولید و برداشت محصول در طول سال می‌شود.
+                کاهش مصرف آب: سیستم‌های آبیاری نوین در گلخانه‌ها، مصرف آب را به طور چشمگیری کاهش می‌دهند و این امر در شرایط کم‌آبی، یک مزیت بزرگ محسوب می‌شود.
+                کنترل آفات و بیماری‌ها: با کنترل دقیق شرایط محیطی در گلخانه‌ها، می‌توان از شیوع آفات و بیماری‌ها جلوگیری کرد و به این ترتیب از مصرف بی‌رویه سموم شیمیایی پرهیز نمود.
+                تولید محصولات با کیفیت: گلخانه‌ها شرایط ایده‌آلی برای پرورش گل‌ها و گیاهان با کیفیت بالا فراهم می‌کنند و این امر منجر به افزایش رضایت مشتریان می‌شود.</p>
+              <p class="mt-4 text-gray-600"> ما در شرکت گلخانه سازی گل افروز متعهد هستیم که با ارائه راه‌حل‌های نوین و به‌کارگیری فناوری‌های روز دنیا، به توسعه پایدار کشاورزی و ارتقای سطح زندگی مردم کمک کنیم.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="pr-16 relative flex flex-col before:block before:absolute before:h-1/6 before:w-4 before:bg-[#3490dc] before:bottom-0 before:right-0 before:rounded-lg  before:transition-all group-hover:before:bg-orange-300 overflow-hidden">
-        <div class="absolute top-0 right-0 bg-blue-500 w-4/6 px-3 md:px-12 py-14 flex flex-col justify-center rounded-xl group-hover:bg-[#38a169] transition-all ">
-          <span class="block mb-10 font-bold group-hover:text-orange-300">ما اینجا هستیم</span>
-          <h2 class="text-white font-bold text-sm md:text-3xl">
-              <?php echo $title; ?>
-          </h2>
+      <!-- ---------------------------- -->
+      <div class="flex flex-wrap ">
+        <div class="mt-10 md:mt-0 mb-12 px-10 md:px-0 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+
+          <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
+            <input type="hidden" name="action" value="my_contact_form">
+            <p>
+              <label>نام:</label>
+              <input name="name" type="text" class="mt-1 mb-3 peer block min-h-[auto] w-full rounded border-2 bg-transparent border-gray-900 py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none" />
+            </p>
+            <p>
+              <label>ایمیل:</label>
+              <input style="cursor: pointer;" name="email" type="text" class="mt-1 mb-3 peer block min-h-[auto] w-full rounded border-2 bg-transparent border-gray-900 py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none" />
+            </p>
+            <p>
+              <label>پیام:</label>
+              <textarea name="message" class="mt-1 mb-3 peer block min-h-[auto] w-full rounded border-2 bg-transparent border-gray-900 py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none"></textarea>
+            </p>
+            <p>
+              <input type="submit" value="ارسال" class="mb-6 py-2 w-full rounded bg-gray-900 text-white px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal lg:mb-0" />
+            </p>
+          </form>
+
+
         </div>
-        <a class="font-bold text-sm flex mt-2 mb-8 items-center gap-2" href="">
-          <span class="hidden md:block">MORE ABOUT US</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-          </svg>
-        </a>
-        <div class="rounded-xl overflow-hidden">
-          <img class="px-1" src="<?php echo $featured_image; ?>" alt=<?php ( $image_alt ? $image_alt : 'بدون توضیحات' );?>>
+
+        <div class=" mt-6 w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+          <div class="flex flex-wrap px-10 md:px-0">
+            <div class=" mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
+              <div class="flex items-start">
+                <div class="shrink-0">
+                  <div class="inline-block rounded-md bg-gray-900 p-4 text-gray-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-6 w-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-6 grow">
+                  <p class="px-4 mb-2 text-right font-bold ">
+                    پل ارتباطی
+                  </p>
+                  <p class="px-4 text-right text-sm text-neutral-500">
+                    info@golafrooz.com
+                  </p>
+                  <p class="px-4 text-right text-sm text-neutral-500">
+                    982191035646+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
+              <div class="flex items-start">
+                <div class="srink-0">
+                  <div class="inline-block rounded-md bg-gray-900 p-4 text-gray-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-7 h-7">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-6 grow">
+                  <p class="px-4 text-right mb-2 font-bold ">
+                    آدرس
+                  </p>
+                  <p class="text-right px-4 text-sm text-neutral-500">
+                    استان البرز - کرج - عظیمیه <br>
+                    بالاتر از پل آزادگان ساختمان قائم <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:mb-12 lg:w-full lg:px-6 xl:w-6/12">
+              <div class="align-start flex">
+                <div class="shrink-0">
+                  <div class="inline-block rounded-md bg-gray-900 p-4 text-white">
+                    <svg fill="#ffffff" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 304.999 304.999" xml:space="preserve" stroke="#ffffff">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g id="XMLID_16_">
+                          <path id="XMLID_17_" d="M160.662,19.47c-18.934,0-37.323,3.668-54.693,10.881L76.353,0.732c-0.819-0.82-2.094-0.967-3.082-0.359 C44.436,18.201,19.773,42.865,1.947,71.699c-0.61,0.986-0.462,2.262,0.358,3.082l28.39,28.383 c-8.491,18.637-12.808,38.5-12.808,59.074c0,78.719,64.049,142.762,142.775,142.762c78.721,0,142.765-64.043,142.765-142.762 C303.427,83.515,239.383,19.47,160.662,19.47z M217.225,148.664l9.943,42.082l9.543,44.395l-44.337-9.533l-42.055-9.893 L36.712,102.111c14.252-29.338,38.339-52.619,68.114-65.832L217.225,148.664z"></path>
+                          <path id="XMLID_20_" d="M221.76,187.396l-7.522-33.023c-25.891,11.889-46.404,32.402-58.283,58.295l33.023,7.52 C195.989,206.165,207.747,194.41,221.76,187.396z"></path>
+                        </g>
+                      </g>
+                    </svg>
+
+
+                  </div>
+                </div>
+                <div class="ml-6 grow">
+                  <p class="mb-2 px-4 text-right font-bold ">فکس</p>
+                  <p class="text-neutral-500 text-right px-4"> 982191035646+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:mb-12 xl:w-6/12">
+              <div class="align-start flex">
+                <div class="shrink-0">
+                  <div class="inline-block rounded-md bg-gray-900 p-4 text-gray-100 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="ml-6 grow">
+                  <p class="mb-2 font-bold px-4 text-right ">موبایل</p>
+                  <p class="text-neutral-500 px-4 text-right"> 989195900820+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-
+</section>
 <?php get_footer(); ?>

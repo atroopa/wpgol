@@ -8,7 +8,6 @@ get_header();
             <h1 class=" py-10 font-black text-7xl md:text-8xl bg-gray-100 mix-blend-lighten uppercase text-center">
                 گلخانه سازی <br>
                 گل افروز <br>
-
             </h1>
         </div>
     </div>
@@ -102,13 +101,13 @@ get_header();
 
     <!-- --------------------------------------- -->
     <div class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% relative h-[300px] ">
-        <div class="flex flex-col gap-4 justify-center items-center w-full h-full px-1 md:px-0">
+        <div class="flex flex-col gap-4 justify-start md:justify-center items-center w-full h-full px-1 md:px-0">
 
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
                 جستوجو
             </h1>
-            <p class="text-gray-300">
-                برای جستجو بیشتر در مورد نوع گلخانه کلمه مورد نظر را وارد کنید 
+            <p class="text-gray-300 px-4 md:px-0">
+                برای جستجو بیشتر در مورد نوع گلخانه کلمه مورد نظر را وارد کنید
             </p>
 
             <form role="search" class="w-full max-w-md mx-auto" action="<?PHP bloginfo("home"); ?>" method="get">
