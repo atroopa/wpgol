@@ -37,59 +37,59 @@ get_header();
                         </p>
                     </div>
 
-                    <a href="#" class="inline-block rounded-lg border bg-white dark:bg-gray-700 dark:border-none px-4 py-2 text-center text-sm font-semibold text-gray-500 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">
+                    <a href="#" class="hidden md:block inline-block rounded-lg border bg-white dark:bg-gray-700 dark:border-none px-4 py-2 text-center text-sm font-semibold text-gray-500 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">
                         بیشتر
                     </a>
                 </div>
 
                 <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
                     <!-- image - start -->
-                    <a href="#" class="group relative flex h-48 items-center justify-center text-center overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                    <a href="<?php echo home_url()."/گلخانه-تونلی/"; ?>"class="group relative flex h-48 items-center justify-center text-center overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
                         <img src="<?php echo get_template_directory_uri().'/img/greenhouse/1.webp' ?>" loading="lazy" alt="golafrooz" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                         </div>
-                        <div class="text-2xl font-bold leading-4 text-white mt-2 backdrop-blur-sm bg-black/30 p-4 rounded-lg hidden lg:block w-full">
+                        <div class="text-sm md:text-2xl font-bold leading-4 text-white mt-2 backdrop-blur-sm bg-black/30 p-4 rounded-lg  w-full">
                             گلخانه تونلی
                         </div>
                     </a>
                     <!-- image - end -->
 
                     <!-- image - start -->
-                    <a href="#" class="group relative flex h-48 items-center justify-center text-center overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                    <a href="<?php echo home_url()."/گلخانه-اسپانیایی-تیپ-یک/"; ?>" class="group relative flex h-48 items-center justify-center text-center overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
                         <img src="<?php echo get_template_directory_uri() . '/img/greenhouse/2.webp' ?>" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                         </div>
 
-                        <div class="text-2xl font-bold leading-4 text-white mt-2 backdrop-blur-sm bg-black/30 p-4 rounded-lg hidden lg:block w-full">
-                            گلخانه اسپانیایی تیپ اول
+                        <div class="text-sm md:text-2xl font-bold leading-4 text-white mt-2 backdrop-blur-sm bg-black/30 p-4 rounded-lg w-full">
+                            گلخانه اسپانیایی تیپ یک
                         </div>
                     </a>
                     <!-- image - end -->
 
                     <!-- image - start -->
-                    <a href="#" class="group relative flex h-48 items-center justify-center text-center overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                    <a href="<?php echo home_url()."/گلخانه-شیشه-ای-هلندی/"; ?>" class="group relative flex h-48 items-center justify-center text-center overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
                         <img src="<?php echo get_template_directory_uri() . '/img/greenhouse/3.webp' ?>" loading="lazy" alt="Photo by Martin Sanchez" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                         </div>
 
-                        <div class="text-2xl font-bold leading-4 text-white mt-2 backdrop-blur-sm bg-black/30 p-4 rounded-lg hidden lg:block w-full">
-                            گلخانه اسپانیایی تیپ دوم
+                        <div class="text-sm md:text-2xl font-bold leading-4 text-white mt-2 backdrop-blur-sm bg-black/30 p-4 rounded-lg w-full">
+                            گلخانه هلندی
                         </div>
                     </a>
                     <!-- image - end -->
 
                     <!-- image - start -->
-                    <a href="#" class="group relative flex h-48 items-center justify-center text-center overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                    <a href="<?php echo home_url()."/گلخانه-اسپانیایی-تیپ-دو/"; ?>" class="group relative flex h-48 items-center justify-center text-center overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
                         <img src="<?php echo get_template_directory_uri() . '/img/greenhouse/4.webp' ?>" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                         </div>
 
-                        <div class="text-2xl font-bold leading-4 text-white mt-2 backdrop-blur-sm bg-black/30 p-4 rounded-lg hidden lg:block w-full">
-                            گلخانه هلندی
+                        <div class="text-sm md:text-2xl font-bold leading-4 text-white mt-2 backdrop-blur-sm bg-black/30 p-4 rounded-lg w-full">
+                        گلخانه اسپانیایی تیپ دوم
                         </div>
                     </a>
                     <!-- image - end -->
@@ -106,11 +106,11 @@ get_header();
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
                 جستوجو
             </h1>
-            <p class="text-gray-300 px-4 md:px-0">
+            <p class="text-gray-300 px-8 md:px-0">
                 برای جستجو بیشتر در مورد نوع گلخانه کلمه مورد نظر را وارد کنید
             </p>
 
-            <form role="search" class="w-full max-w-md mx-auto" action="<?PHP bloginfo("home"); ?>" method="get">
+            <form role="search" class="px-8 md:px-0 w-full max-w-md mx-auto" action="<?PHP bloginfo("home"); ?>" method="get">
             <div class="relative p-3 border border-gray-200 rounded-lg w-full max-w-lg">
                 <input value="<?php the_search_query(); ?>" name="s" type="search" type="text" class="rounded-md w-full p-3 " placeholder="گلخانه ...">
                 <button type="submit" class="absolute left-6 top-6">

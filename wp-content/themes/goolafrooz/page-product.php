@@ -11,7 +11,6 @@ get_header(); ?>
     </h1>
 </div>
 
-
 <?php
 $parent_term_slug = 'green-house-products';
 $parent_term = get_term_by('slug', $parent_term_slug, 'category');
@@ -83,8 +82,8 @@ if ($sub_terms) {
             <a href="<?php echo get_term_link($sub_term); ?>">
                 <li>
                     <!-- ----------- TITLE CAT -------------- -->
-                    <div class=" w-full dark:bg-slate-800 gap-6 flex items-center justify-center">
-                        <div class="md:w-full lg:w-1/2 bg-gray-100 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
+                    <div class=" w-full bg-slate-800 gap-0 md:fgap-6 flex items-center justify-center">
+                        <div class="md:w-full lg:w-1/2 bg-blue-900 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
                             <div class="flex items-center gap-4">
                                 <img src="<?php echo $iconURL; ?>" class="bg-gray-200 p-5 w-32 group-hover:w-36 group-hover:h-36 object-contain rounded-xl transition-all duration-500 delay-500 transform" />
                                 <div class="w-fit transition-all transform duration-500">
@@ -92,7 +91,6 @@ if ($sub_terms) {
                                         <a href="<?php echo get_term_link($sub_term); ?>"><?php echo $sub_term->name; ?></a>
                                     </h1>
                                     <div class="text-gray-400"><?PHP echo $sub_term->description; ?></div>
-
                                 </div>
                                 <div class=" w-1/2 h-20 flex flex-row items-center justify-center ">
                                     <a href="<?php echo get_term_link($sub_term); ?>">
@@ -102,7 +100,6 @@ if ($sub_terms) {
                             </div>
                             <div class="absolute group-hover:bottom-1 delay-300 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg">
                                 <div class="flex justify-evenly items-center gap-2 p-1 text-2xl text-white dark:text-gray-800">
-
                                 </div>
                             </div>
                         </div>
