@@ -24,10 +24,10 @@
 <section class="w-full">
   <div class="slider-wrapper">
     <div class="slider">
-      <img id="slide-1" src="<?php echo get_template_directory_uri().'/img/home-slider/1.webp' ?>" alt="golafrooz">
-      <img id="slide-2" src="<?php echo get_template_directory_uri().'/img/home-slider/2.webp' ?>" alt="golafrooz">
-      <img id="slide-3" src="<?php echo get_template_directory_uri().'/img/home-slider/3.webp' ?>" alt="golafrooz">
-      <img id="slide-4" src="<?php echo get_template_directory_uri().'/img/home-slider/4.webp' ?>" alt="golafrooz">
+      <img id="slide-1" src="<?php echo get_template_directory_uri().'/img/home-slider/10.jpg' ?>" alt="golafrooz">
+      <img id="slide-2" src="<?php echo get_template_directory_uri().'/img/home-slider/20.jpg' ?>" alt="golafrooz">
+      <img id="slide-3" src="<?php echo get_template_directory_uri().'/img/home-slider/30.jpg' ?>" alt="golafrooz">
+      <img id="slide-4" src="<?php echo get_template_directory_uri().'/img/home-slider/40.jpg' ?>" alt="golafrooz">
     </div>
     <div class="slider-nav">
       <a href="#slide-1"></a>
@@ -98,7 +98,7 @@
     <div class="relative pt-10 px-10 flex items-center justify-center">
       <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
       </div>
-      <img class="relative w-40" src="<?php echo get_template_directory_uri().'/img/gol/1.png' ?>" alt="">
+      <img class="relative w-40" src="<?php echo get_template_directory_uri().'/img/gol/10.png' ?>" alt="">
     </div>
     <div class="relative text-white px-6 pb-6 mt-6">
 
@@ -117,7 +117,7 @@
     <div class="relative pt-10 px-10 flex items-center justify-center">
       <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
       </div>
-      <img class="relative w-40" src="<?php echo get_template_directory_uri().'/img/gol/2.png' ?>" alt="">
+      <img class="relative w-40" src="<?php echo get_template_directory_uri().'/img/gol/20.png' ?>" alt="">
     </div>
     <div class="relative text-white px-6 pb-6 mt-6">
       <span class="block opacity-75 mb-1 text-right">راهنمای</span>
@@ -136,7 +136,7 @@
     <div class="relative pt-10 px-10 flex items-center justify-center">
       <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
       </div>
-      <img class="relative w-40 h-48" src="<?php echo get_template_directory_uri().'/img/gol/3.png' ?>" alt="">
+      <img class="relative w-40 h-48" src="<?php echo get_template_directory_uri().'/img/gol/30.png' ?>" alt="">
     </div>
     <div class="relative text-white px-6 pb-6 mt-6">
       <span class="block opacity-75 mb-1 text-right">راهنمای</span>
@@ -155,7 +155,7 @@
     <div class="relative pt-10 px-10 flex items-center justify-center">
       <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
       </div>
-      <img class="relative w-40 h-48" src="<?php echo get_template_directory_uri().'/img/gol/4.png' ?>" alt="">
+      <img class="relative w-40 h-48" src="<?php echo get_template_directory_uri().'/img/gol/40.png' ?>" alt="">
     </div>
     <div class="relative text-white px-6 pb-6 mt-6">
       <span class="block opacity-75 mb-1 text-right">راهنمای</span>

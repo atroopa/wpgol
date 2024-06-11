@@ -82,12 +82,12 @@ get_header();
         }
 
         body {
-            font-family: sans-serif;
+            /* font-family: sans-serif; */
             width: 100%;
             height: 100%;
-            font-size: 16px;
+            /* font-size: 16px; */
             line-height: 1.7;
-            color: #333;
+            color: #fff;
             font-weight: 400;
             text-rendering: optimizeSpeed;
         }
@@ -107,18 +107,7 @@ get_header();
             line-height: 1.8;
         }
 
-        a {
-            text-decoration: none;
-            -webkit-transition: all 0.4s;
-            -o-transition: all 0.4s;
-            transition: all 0.4s;
-            color: #fff;
-        }
 
-        a:focus {
-            outline: none;
-            text-decoration: none;
-        }
 
         ul,
         li {
@@ -148,17 +137,6 @@ get_header();
             color: #000;
         }
 
-        .navbar li {
-            display: inline-block;
-            float: none;
-        }
-
-        .navbar li a {
-            color: #333;
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: 1rem;
-        }
 
         .navbar li a:hover {
             color: #A7F5FF;
@@ -523,7 +501,7 @@ $albums = array(
 
 <body class=" bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
 <div class=" col-12">
-        <ul class="nav navbar navbar-light filters text-center">
+        <ul class=" text-white navbar-light filters text-center">
             <li class="active" data-filter="*"><a href="#!">همه</a></li>
             <li data-filter=".graphic"><a href="#!">گلخانه تونلی</a></li>
             <li data-filter=".uiUx"><a href="#!">گلخانه شیشه ای هلندی</a></li>
