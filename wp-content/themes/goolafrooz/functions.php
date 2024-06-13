@@ -48,6 +48,4 @@ function my_contact_form_handler() {
 }
 
 
-
-
 ?>

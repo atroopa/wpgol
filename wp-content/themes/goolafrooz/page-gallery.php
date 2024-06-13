@@ -1,1018 +1,369 @@
-<?PHP // Template Name: gallery
+<?php
+// Template Name: gallery
 
 get_header();
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Golafrooz Gallery</title>
+        <style>
+            .img_box img {
+                width: 300px;
+                height: 400px;
+                object-fit: fill;
+                max-width: 100%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <!-- ------------------------ اسپانیایی تیپ یک ----------------------------- -->
+        <div class="felx flex-col items-center justify-center py-10">
+            <section class="relative z-10 overflow-hidden bg-gray-900 py-16 px-8 mt-10">
+                <div class="container">
+                    <div class="-mx-4 flex flex-wrap items-center">
+                        <div class="w-full px-4 lg:w-1/2">
+                            <div class="text-center lg:text-left ">
+                                <div class="mb-10 lg:mb-0 ">
+                                    <h1
+                                        class="mt-0 mb-3 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white ">
+                                        گلخانه اسپانیایی تیپ یک</h1>
+                                    <p
+                                        class="w-full text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed text-white">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="absolute top-0 right-0 -z-10">
+                    <svg width="388" height="250" viewBox="0 0 388 220" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z" fill="url(#paint0_linear_971_6910)"></path><defs><linearGradient id="paint0_linear_971_6910" x1="60.5" y1="111" x2="287" y2="111" gradientUnits="userSpaceOnUse"><stop offset="0.520507" stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="absolute top-0 right-0 -z-10"><svg width="324" height="250" viewBox="0 0 324 220" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z" fill="url(#paint0_linear_971_6911)"></path><defs><linearGradient id="paint0_linear_971_6911" x1="60.5" y1="111" x2="287" y2="111" gradientUnits="userSpaceOnUse"><stop offset="0.520507" stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="absolute top-4 left-4 -z-10"><svg width="43" height="56" viewBox="0 0 43 56" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5"><circle cx="40.9984" cy="1.49626" r="1.49626" transform="rotate(90 40.9984 1.49626)" fill="white"></circle><circle cx="27.8304" cy="1.49626" r="1.49626" transform="rotate(90 27.8304 1.49626)" fill="white"></circle><circle cx="14.6644" cy="1.49626" r="1.49626" transform="rotate(90 14.6644 1.49626)" fill="white"></circle><circle cx="1.49642" cy="1.49626" r="1.49626" transform="rotate(90 1.49642 1.49626)" fill="white"></circle><circle cx="40.9984" cy="14.6642" r="1.49626" transform="rotate(90 40.9984 14.6642)" fill="white"></circle><circle cx="27.8304" cy="14.6642" r="1.49626" transform="rotate(90 27.8304 14.6642)" fill="white"></circle><circle cx="14.6644" cy="14.6642" r="1.49626" transform="rotate(90 14.6644 14.6642)" fill="white"></circle><circle cx="1.49642" cy="14.6642" r="1.49626" transform="rotate(90 1.49642 14.6642)" fill="white"></circle><circle cx="40.9984" cy="27.8302" r="1.49626" transform="rotate(90 40.9984 27.8302)" fill="white"></circle><circle cx="27.8304" cy="27.8302" r="1.49626" transform="rotate(90 27.8304 27.8302)" fill="white"></circle><circle cx="14.6644" cy="27.8302" r="1.49626" transform="rotate(90 14.6644 27.8302)" fill="white"></circle><circle cx="1.49642" cy="27.8302" r="1.49626" transform="rotate(90 1.49642 27.8302)" fill="white"></circle><circle cx="40.9984" cy="40.9982" r="1.49626" transform="rotate(90 40.9984 40.9982)" fill="white"></circle><circle cx="27.8304" cy="40.9963" r="1.49626" transform="rotate(90 27.8304 40.9963)" fill="white"></circle><circle cx="14.6644" cy="40.9982" r="1.49626" transform="rotate(90 14.6644 40.9982)" fill="white"></circle><circle cx="1.49642" cy="40.9963" r="1.49626" transform="rotate(90 1.49642 40.9963)" fill="white"></circle><circle cx="40.9984" cy="54.1642" r="1.49626" transform="rotate(90 40.9984 54.1642)" fill="white"></circle><circle cx="27.8304" cy="54.1642" r="1.49626" transform="rotate(90 27.8304 54.1642)" fill="white"></circle><circle cx="14.6644" cy="54.1642" r="1.49626" transform="rotate(90 14.6644 54.1642)" fill="white"></circle><circle cx="1.49642" cy="54.1642" r="1.49626" transform="rotate(90 1.49642 54.1642)" fill="white"></circle></g>
+                    </svg>
+                </span>
+            </section>
+            <div class="splide gallery-one">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-<head>
-    <title>golafrooz gallery</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- ------------------------ اسپانیایی تیپ دو ----------------------------------------- -->
+        <div class="felx flex-col items-center justify-center py-10">
+            <section class="relative z-10 overflow-hidden bg-gray-900 py-16 px-8 mt-10">
+                <div class="container">
+                    <div class="-mx-4 flex flex-wrap items-center">
+                        <div class="w-full px-4 lg:w-1/2">
+                            <div class="text-center lg:text-left ">
+                                <div class="mb-10 lg:mb-0 ">
+                                    <h1
+                                        class="mt-0 mb-3 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white ">
+                                        گلخانه اسپانیایی تیپ دو</h1>
+                                    <p
+                                        class="w-full text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed text-white">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="absolute top-0 right-0 -z-10">
+                    <svg width="388" height="250" viewBox="0 0 388 220" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z" fill="url(#paint0_linear_971_6910)"></path><defs><linearGradient id="paint0_linear_971_6910" x1="60.5" y1="111" x2="287" y2="111" gradientUnits="userSpaceOnUse"><stop offset="0.520507" stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="absolute top-0 right-0 -z-10"><svg width="324" height="250" viewBox="0 0 324 220" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z" fill="url(#paint0_linear_971_6911)"></path><defs><linearGradient id="paint0_linear_971_6911" x1="60.5" y1="111" x2="287" y2="111" gradientUnits="userSpaceOnUse"><stop offset="0.520507" stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="absolute top-4 left-4 -z-10"><svg width="43" height="56" viewBox="0 0 43 56" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5"><circle cx="40.9984" cy="1.49626" r="1.49626" transform="rotate(90 40.9984 1.49626)" fill="white"></circle><circle cx="27.8304" cy="1.49626" r="1.49626" transform="rotate(90 27.8304 1.49626)" fill="white"></circle><circle cx="14.6644" cy="1.49626" r="1.49626" transform="rotate(90 14.6644 1.49626)" fill="white"></circle><circle cx="1.49642" cy="1.49626" r="1.49626" transform="rotate(90 1.49642 1.49626)" fill="white"></circle><circle cx="40.9984" cy="14.6642" r="1.49626" transform="rotate(90 40.9984 14.6642)" fill="white"></circle><circle cx="27.8304" cy="14.6642" r="1.49626" transform="rotate(90 27.8304 14.6642)" fill="white"></circle><circle cx="14.6644" cy="14.6642" r="1.49626" transform="rotate(90 14.6644 14.6642)" fill="white"></circle><circle cx="1.49642" cy="14.6642" r="1.49626" transform="rotate(90 1.49642 14.6642)" fill="white"></circle><circle cx="40.9984" cy="27.8302" r="1.49626" transform="rotate(90 40.9984 27.8302)" fill="white"></circle><circle cx="27.8304" cy="27.8302" r="1.49626" transform="rotate(90 27.8304 27.8302)" fill="white"></circle><circle cx="14.6644" cy="27.8302" r="1.49626" transform="rotate(90 14.6644 27.8302)" fill="white"></circle><circle cx="1.49642" cy="27.8302" r="1.49626" transform="rotate(90 1.49642 27.8302)" fill="white"></circle><circle cx="40.9984" cy="40.9982" r="1.49626" transform="rotate(90 40.9984 40.9982)" fill="white"></circle><circle cx="27.8304" cy="40.9963" r="1.49626" transform="rotate(90 27.8304 40.9963)" fill="white"></circle><circle cx="14.6644" cy="40.9982" r="1.49626" transform="rotate(90 14.6644 40.9982)" fill="white"></circle><circle cx="1.49642" cy="40.9963" r="1.49626" transform="rotate(90 1.49642 40.9963)" fill="white"></circle><circle cx="40.9984" cy="54.1642" r="1.49626" transform="rotate(90 40.9984 54.1642)" fill="white"></circle><circle cx="27.8304" cy="54.1642" r="1.49626" transform="rotate(90 27.8304 54.1642)" fill="white"></circle><circle cx="14.6644" cy="54.1642" r="1.49626" transform="rotate(90 14.6644 54.1642)" fill="white"></circle><circle cx="1.49642" cy="54.1642" r="1.49626" transform="rotate(90 1.49642 54.1642)" fill="white"></circle></g>
+                    </svg>
+                </span>
+            </section>
+            <div class="splide gallery-two">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/2.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/3.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/4.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/5.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/6.webp' ?>" alt>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------   گلخانه هلندی ----------------------------------------- -->
+        <div class="felx flex-col items-center justify-center py-10">
+            <section class="relative z-10 overflow-hidden bg-gray-900 py-16 px-8 mt-10">
+                <div class="container">
+                    <div class="-mx-4 flex flex-wrap items-center">
+                        <div class="w-full px-4 lg:w-1/2">
+                            <div class="text-center lg:text-left ">
+                                <div class="mb-10 lg:mb-0 ">
+                                    <h1
+                                        class="mt-0 mb-3 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white ">
+                                        گلخانه هلندی</h1>
+                                    <p
+                                        class="w-full text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed text-white">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="absolute top-0 right-0 -z-10">
+                    <svg width="388" height="250" viewBox="0 0 388 220" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z" fill="url(#paint0_linear_971_6910)"></path><defs><linearGradient id="paint0_linear_971_6910" x1="60.5" y1="111" x2="287" y2="111" gradientUnits="userSpaceOnUse"><stop offset="0.520507" stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="absolute top-0 right-0 -z-10"><svg width="324" height="250" viewBox="0 0 324 220" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z" fill="url(#paint0_linear_971_6911)"></path><defs><linearGradient id="paint0_linear_971_6911" x1="60.5" y1="111" x2="287" y2="111" gradientUnits="userSpaceOnUse"><stop offset="0.520507" stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="absolute top-4 left-4 -z-10"><svg width="43" height="56" viewBox="0 0 43 56" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5"><circle cx="40.9984" cy="1.49626" r="1.49626" transform="rotate(90 40.9984 1.49626)" fill="white"></circle><circle cx="27.8304" cy="1.49626" r="1.49626" transform="rotate(90 27.8304 1.49626)" fill="white"></circle><circle cx="14.6644" cy="1.49626" r="1.49626" transform="rotate(90 14.6644 1.49626)" fill="white"></circle><circle cx="1.49642" cy="1.49626" r="1.49626" transform="rotate(90 1.49642 1.49626)" fill="white"></circle><circle cx="40.9984" cy="14.6642" r="1.49626" transform="rotate(90 40.9984 14.6642)" fill="white"></circle><circle cx="27.8304" cy="14.6642" r="1.49626" transform="rotate(90 27.8304 14.6642)" fill="white"></circle><circle cx="14.6644" cy="14.6642" r="1.49626" transform="rotate(90 14.6644 14.6642)" fill="white"></circle><circle cx="1.49642" cy="14.6642" r="1.49626" transform="rotate(90 1.49642 14.6642)" fill="white"></circle><circle cx="40.9984" cy="27.8302" r="1.49626" transform="rotate(90 40.9984 27.8302)" fill="white"></circle><circle cx="27.8304" cy="27.8302" r="1.49626" transform="rotate(90 27.8304 27.8302)" fill="white"></circle><circle cx="14.6644" cy="27.8302" r="1.49626" transform="rotate(90 14.6644 27.8302)" fill="white"></circle><circle cx="1.49642" cy="27.8302" r="1.49626" transform="rotate(90 1.49642 27.8302)" fill="white"></circle><circle cx="40.9984" cy="40.9982" r="1.49626" transform="rotate(90 40.9984 40.9982)" fill="white"></circle><circle cx="27.8304" cy="40.9963" r="1.49626" transform="rotate(90 27.8304 40.9963)" fill="white"></circle><circle cx="14.6644" cy="40.9982" r="1.49626" transform="rotate(90 14.6644 40.9982)" fill="white"></circle><circle cx="1.49642" cy="40.9963" r="1.49626" transform="rotate(90 1.49642 40.9963)" fill="white"></circle><circle cx="40.9984" cy="54.1642" r="1.49626" transform="rotate(90 40.9984 54.1642)" fill="white"></circle><circle cx="27.8304" cy="54.1642" r="1.49626" transform="rotate(90 27.8304 54.1642)" fill="white"></circle><circle cx="14.6644" cy="54.1642" r="1.49626" transform="rotate(90 14.6644 54.1642)" fill="white"></circle><circle cx="1.49642" cy="54.1642" r="1.49626" transform="rotate(90 1.49642 54.1642)" fill="white"></circle></g>
+                    </svg>
+                </span>
+            </section>
+            <div class="splide gallery-three">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/7.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/8.webp' ?>"alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/9.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/10.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/11.webp' ?>"alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/12.webp' ?>" alt>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <!-- ------------------------ گلخانه تونلی ----------------------------------------- -->
+        <div class="felx flex-col items-center justify-center py-10">
+            <section class="relative z-10 overflow-hidden bg-gray-900 py-16 px-8 mt-10">
+                <div class="container">
+                    <div class="-mx-4 flex flex-wrap items-center">
+                        <div class="w-full px-4 lg:w-1/2">
+                            <div class="text-center lg:text-left ">
+                                <div class="mb-10 lg:mb-0 ">
+                                    <h1
+                                        class="mt-0 mb-3 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white ">
+                                        گلخانه تونلی</h1>
+                                    <p
+                                        class="w-full text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed text-white">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="absolute top-0 right-0 -z-10">
+                    <svg width="388" height="250" viewBox="0 0 388 220" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z" fill="url(#paint0_linear_971_6910)"></path><defs><linearGradient id="paint0_linear_971_6910" x1="60.5" y1="111" x2="287" y2="111" gradientUnits="userSpaceOnUse"><stop offset="0.520507" stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="absolute top-0 right-0 -z-10"><svg width="324" height="250" viewBox="0 0 324 220" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z" fill="url(#paint0_linear_971_6911)"></path><defs><linearGradient id="paint0_linear_971_6911" x1="60.5" y1="111" x2="287" y2="111" gradientUnits="userSpaceOnUse"><stop offset="0.520507" stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="absolute top-4 left-4 -z-10"><svg width="43" height="56" viewBox="0 0 43 56" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5"><circle cx="40.9984" cy="1.49626" r="1.49626" transform="rotate(90 40.9984 1.49626)" fill="white"></circle><circle cx="27.8304" cy="1.49626" r="1.49626" transform="rotate(90 27.8304 1.49626)" fill="white"></circle><circle cx="14.6644" cy="1.49626" r="1.49626" transform="rotate(90 14.6644 1.49626)" fill="white"></circle><circle cx="1.49642" cy="1.49626" r="1.49626" transform="rotate(90 1.49642 1.49626)" fill="white"></circle><circle cx="40.9984" cy="14.6642" r="1.49626" transform="rotate(90 40.9984 14.6642)" fill="white"></circle><circle cx="27.8304" cy="14.6642" r="1.49626" transform="rotate(90 27.8304 14.6642)" fill="white"></circle><circle cx="14.6644" cy="14.6642" r="1.49626" transform="rotate(90 14.6644 14.6642)" fill="white"></circle><circle cx="1.49642" cy="14.6642" r="1.49626" transform="rotate(90 1.49642 14.6642)" fill="white"></circle><circle cx="40.9984" cy="27.8302" r="1.49626" transform="rotate(90 40.9984 27.8302)" fill="white"></circle><circle cx="27.8304" cy="27.8302" r="1.49626" transform="rotate(90 27.8304 27.8302)" fill="white"></circle><circle cx="14.6644" cy="27.8302" r="1.49626" transform="rotate(90 14.6644 27.8302)" fill="white"></circle><circle cx="1.49642" cy="27.8302" r="1.49626" transform="rotate(90 1.49642 27.8302)" fill="white"></circle><circle cx="40.9984" cy="40.9982" r="1.49626" transform="rotate(90 40.9984 40.9982)" fill="white"></circle><circle cx="27.8304" cy="40.9963" r="1.49626" transform="rotate(90 27.8304 40.9963)" fill="white"></circle><circle cx="14.6644" cy="40.9982" r="1.49626" transform="rotate(90 14.6644 40.9982)" fill="white"></circle><circle cx="1.49642" cy="40.9963" r="1.49626" transform="rotate(90 1.49642 40.9963)" fill="white"></circle><circle cx="40.9984" cy="54.1642" r="1.49626" transform="rotate(90 40.9984 54.1642)" fill="white"></circle><circle cx="27.8304" cy="54.1642" r="1.49626" transform="rotate(90 27.8304 54.1642)" fill="white"></circle><circle cx="14.6644" cy="54.1642" r="1.49626" transform="rotate(90 14.6644 54.1642)" fill="white"></circle><circle cx="1.49642" cy="54.1642" r="1.49626" transform="rotate(90 1.49642 54.1642)" fill="white"></circle></g>
+                    </svg>
+                </span>
+            </section>
+            <div class="splide gallery-four">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/2.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/3.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/4.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/5.webp' ?>" alt>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="img_box">
+                                <img src="<?php echo get_template_directory_uri().'/images/6.webp' ?>" alt>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-    <!-- Isotope JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            'use strict';
-
-            //***********isotope js
-            var $projects = $('.projects');
-
-            $projects.isotope({
-                itemSelector: '.item',
-                layoutMode: 'fitRows'
-            });
-
-            $('ul.filters > li').on('click', function(e) {
-                e.preventDefault();
-
-                var filter = $(this).attr('data-filter');
-
-                $('ul.filters > li').removeClass('active');
-                $(this).addClass('active');
-
-                $projects.isotope({
-                    filter: filter
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var splide1 = new Splide('.gallery-one', {
+                    perPage: 4,
+                    gap: '1.5rem',
+                    padding: '3rem',
+                    focus: 'center',
+                    type: 'loop',
+                    drag: 'free',
+                    snap: true,
+                    breakpoints: {
+                        640: {
+                            perPage: 2,
+                            gap: '.7rem',
+                        },
+                        480: {
+                            perPage: 1,
+                            gap: '.7rem',
+                        },
+                    },
                 });
+                splide1.mount();
+
+                var splide2 = new Splide('.gallery-two', {
+                    perPage: 4,
+                    gap: '1.5rem',
+                    padding: '3rem',
+                    focus: 'center',
+                    type: 'loop',
+                    drag: 'free',
+                    snap: true,
+                    breakpoints: {
+                        640: {
+                            perPage: 2,
+                            gap: '.7rem',
+                        },
+                        480: {
+                            perPage: 1,
+                            gap: '.7rem',
+                        },
+                    },
+                });
+                splide2.mount();
+
+                var splide3 = new Splide('.gallery-three', {
+                    perPage: 4,
+                    gap: '1.5rem',
+                    padding: '3rem',
+                    focus: 'center',
+                    type: 'loop',
+                    drag: 'free',
+                    snap: true,
+                    breakpoints: {
+                        640: {
+                            perPage: 2,
+                            gap: '.7rem',
+                        },
+                        480: {
+                            perPage: 1,
+                            gap: '.7rem',
+                        },
+                    },
+                });
+                splide3.mount();
+
+
+                var splide4 = new Splide('.gallery-four', {
+                    perPage: 4,
+                    gap: '1.5rem',
+                    padding: '3rem',
+                    focus: 'center',
+                    type: 'loop',
+                    drag: 'free',
+                    snap: true,
+                    breakpoints: {
+                        640: {
+                            perPage: 2,
+                            gap: '.7rem',
+                        },
+                        480: {
+                            perPage: 1,
+                            gap: '.7rem',
+                        },
+                    },
+                });
+                splide4.mount();
             });
-
-            // ***********bootstarp Modal
-            $('.modal').on('shown.bs.modal', function() {
-                $('#myInput').trigger('focus')
-            });
-
-            // Change image on modal show
-            $(".modal").on("show.bs.modal", function() {
-                var activeImage = $(this).find(".image-list img:first").attr("src");
-                $(this).find(".product-image .active1").attr("src", activeImage);
-            });
-
-            // Change image on modal click
-            $(".modal .image-list img, .modal .card-img-top").on("click", function() {
-                var activeImage = $(this).attr("src");
-                $(this).closest(".modal").find(".active1").attr("src", activeImage);
-            });
-
-            $(".nav .nav-link").on("click", function() {
-                $(".nav").find(".active").removeClass("active");
-                $(this).addClass("active");
-            });
-        });
-    </script>
-
-    <style>
-        /*--- Default css strats---*/
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
-            /* font-family: sans-serif; */
-            width: 100%;
-            height: 100%;
-            /* font-size: 16px; */
-            line-height: 1.7;
-            color: #fff;
-            font-weight: 400;
-            text-rendering: optimizeSpeed;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            color: #333;
-            font-weight: 600;
-        }
-
-        p {
-            letter-spacing: 0;
-            line-height: 1.8;
-        }
-
-
-
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /*---Default css ends---*/
-        /*---------- Nav area css starts -------------*/
-        .navbar-nav {
-            margin-top: 15px;
-            width: 100%;
-        }
-
-        .nav li .active {
-            color: #00a7be !important;
-            font-weight: 900;
-        }
-
-        .navbar {
-            margin-bottom: 0;
-            color: #000;
-        }
-
-
-        .navbar li a:hover {
-            color: #A7F5FF;
-            text-decoration: none;
-        }
-
-        .navbar li.active a {
-            font-weight: bold;
-            color: #D1E8EB;
-        }
-
-        /*---------- Nav area css ends -------------*/
-        .col-12 {
-            height: 100%;
-            margin: 0;
-            overflow: auto;
-        }
-
-        .card {
-            height: 25vh;
-            width: 100%;
-            border: none;
-            cursor: pointer;
-            overflow: visible;
-            padding: 5px;
-            margin-bottom: 20px; /* فاصله بین کارت‌ها */
-        }
-
-        img {
-            border-radius: 0;
-            height: 90%;
-            width: 100%;
-            -o-object-fit: cover;
-            object-fit: cover;
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-            transform: scale(1);
-            -webkit-transition: all 0.3s ease-in-out;
-            -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-        }
-
-        img:hover {
-            -webkit-transform: scale(1.05);
-            -ms-transform: scale(1.05);
-            transform: scale(1.05);
-        }
-
-        .card:hover .card-text {
-            font-size: 1rem;
-            color: #00a7be;
-        }
-
-        .card-body {
-            padding: 0;
-            margin: 0;
-            text-align: center;
-            align-items: center;
-        }
-
-        .card-text {
-            padding: 0;
-            margin: 0;
-            color: #fff;
-            font-size: 1rem;
-            background: #333;
-            white-space: nowrap;
-            width: 100%;
-            height: 3rem;
-        }
-
-        /*---------- works area css end --------*/
-        /*---------- modal css start --------*/
-        .modal-dialog {
-            max-width: 100vw;
-        }
-
-        .modal-content {
-            border: none;
-            background: rgba(0, 0, 0, 0.7);
-        }
-
-        .modal-content .modal-header {
-            border: none;
-        }
-
-        .modal-content .modal-header span {
-            color: #fff;
-        }
-
-        .modal-content .modal-body {
-            padding: 10px;
-            text-align: center;
-        }
-
-        .modal-content .modal-body .upper {
-            height: fit-content;
-            display: flex;
-        }
-
-        .modal-content .modal-body .upper .text {
-            width: 30vw;
-            color: #fff;
-            text-align: left;
-            padding: 5%;
-        }
-
-        .modal-content .modal-body .upper .text h2 {
-            font-size: 2rem;
-            color: #fff;
-        }
-
-        .modal-content .modal-body .upper .text h3 {
-            font-size: 1.5rem;
-            color: #fff;
-        }
-
-        .modal-content .modal-body .upper .text p {
-            font-size: 0.8rem;
-            margin: 0;
-        }
-
-        .modal-content .modal-body .upper .product-image {
-            max-width: 70vw;
-        }
-
-        .modal-content .modal-body .upper .product-image .active1 {
-            max-height: 60vh;
-            padding: 10px;
-            object-fit: contain;
-        }
-
-        .modal-content .modal-body .sideImg {
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .modal-content .modal-body .sideImg ul {
-            width: 100%;
-            text-align: center;
-        }
-
-        .modal-content .modal-body .sideImg ul li {
-            display: inline-block;
-            height: 20vh;
-            width: 20vw;
-        }
-
-        .modal-content .modal-body .sideImg ul li img {
-            height: 100%;
-            object-fit: cover;
-            padding: 5px;
-        }
-
-        .modal-content .modal-body .sideImg ul li img:hover {
-            opacity: 0.7;
-        }
-
-        @media (max-width: 770px) {
-            .modal-content .modal-body .upper {
-                display: block;
-            }
-
-            .modal-content .modal-body .upper .text {
-                height: fit-content;
-                width: 100%;
-            }
-
-            .modal-content .modal-body .upper .product-image {
-                max-width: 100vw;
-            }
-
-            .modal-content .modal-body .upper .product-image .active1 {
-                max-height: 60vh;
-                padding: 10px;
-                object-fit: contain;
-            }
-
-            .modal-content .modal-body .sideImg ul {
-                text-align: left;
-            }
-
-            .modal-content .modal-body .sideImg ul li {
-                height: 50px;
-                width: 50px;
-            }
-        }
-
-        @media (orientation: landscape) and (max-height: 500px) {
-            .modal-content .modal-body .upper {
-                display: block;
-            }
-
-            .modal-content .modal-body .upper .text {
-                height: fit-content;
-                width: 100%;
-            }
-
-            .modal-content .modal-body .upper .product-image {
-                height: 70%;
-                width: 100%;
-            }
-
-            .modal-content .modal-body .sideImg ul {
-                text-align: center;
-            }
-
-            .modal-content .modal-body .sideImg ul li {
-                height: 50px;
-                width: 50px;
-            }
-        }
-
-        .modal-content .modal-footer {
-            border: none;
-            justify-content: center;
-            align-content: center;
-        }
-
-        .modal-content .modal-footer .btn {
-            background: transparent;
-            border: #fff solid 2px;
-        }
-
-        /*---------- modal css end --------*/
-    </style>
-
-
-</head>
-<?php
-// اطلاعات مربوط به عکس‌ها و متن‌ها
-$albums = array(
-    array(
-        "card-title" => "تیتر کارت تونلی",
-        "title" => "گلخانه تونلی تایتل",
-        "subtitle" => "گلخانه تونلی ساب تایتل",
-        "image_src" => get_template_directory_uri().'/img/gallery/workmodal1/1.webp',
-        "modal_id" => "#workModal1",
-        "text" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum necessitatibus enim nam in ex voluptate voluptates veniam iusto alias aspernatur?",
-        "images" => array(
-            get_template_directory_uri().'/img/gallery/workmodal1/1.webp',
-            get_template_directory_uri().'/img/gallery/workmodal1/2.webp',
-            get_template_directory_uri().'/img/gallery/workmodal1/3.webp',
-            get_template_directory_uri().'/img/gallery/workmodal1/4.webp'
-        )
-
-    ),
-    array(
-        "card-title" => "تیتر کارت دوم",
-        "title" => "تیتر اصلی آلبوم دوم",
-        "subtitle" => "ساب تایتل آلبوم دوم",
-        "image_src" => get_template_directory_uri().'/img/gallery/workmodal2/1.webp',
-        "modal_id" => "#workModal2",
-        "text" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum necessitatibus enim nam in ex voluptate voluptates veniam iusto alias aspernatur?",
-        "images" => array(
-            get_template_directory_uri().'/img/gallery/workmodal2/1.webp',
-            get_template_directory_uri().'/img/gallery/workmodal2/2.webp',
-            get_template_directory_uri().'/img/gallery/workmodal2/3.webp',
-            get_template_directory_uri().'/img/gallery/workmodal2/4.webp'
-        )
-    ),
-    array(
-        "card-title" => "تیتر کارت سوم",
-        "title" => "Album3",
-        "subtitle" => "Subtitle3",
-        "image_src" => get_template_directory_uri().'/img/gallery/workmodal3/1.webp',
-        "modal_id" => "#workModal3",
-        "text" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum necessitatibus enim nam in ex voluptate voluptates veniam iusto alias aspernatur?",
-        "images" => array(
-            get_template_directory_uri().'/img/gallery/workmodal3/1.webp',
-            get_template_directory_uri().'/img/gallery/workmodal3/2.webp',
-            get_template_directory_uri().'/img/gallery/workmodal3/3.webp',
-            get_template_directory_uri().'/img/gallery/workmodal3/4.webp'
-        )
-    ),
-    array(
-        "card-title" => "تیتر کارت چهارم",
-        "title" => "تایتل چهارم",
-        "subtitle" => "ساب تایتل چهارم ",
-        "image_src" => get_template_directory_uri().'/img/gallery/workmodal4/1.webp',
-        "modal_id" => "#workModal4",
-        "text" => "متن آلبوم چهارم",
-        "images" => array(
-            get_template_directory_uri().'/img/gallery/workmodal4/1.webp',
-            get_template_directory_uri().'/img/gallery/workmodal4/2.webp',
-            get_template_directory_uri().'/img/gallery/workmodal4/3.webp',
-            get_template_directory_uri().'/img/gallery/workmodal4/4.webp'
-        )
-    ),
-    array(
-        "card-title" => "تیتر کارت پنجم",
-        "title" => "تایتل پنجم",
-        "subtitle" => "ساب تایتل پنجم ",
-        "image_src" => get_template_directory_uri().'/img/gallery/workmodal5/1.webp',
-        "modal_id" => "#workModal5",
-        "text" => "متن آلبوم پنجم",
-        "images" => array(
-            get_template_directory_uri().'/img/gallery/workmodal5/1.webp',
-            get_template_directory_uri().'/img/gallery/workmodal5/2.webp',
-            get_template_directory_uri().'/img/gallery/workmodal5/3.webp',
-            get_template_directory_uri().'/img/gallery/workmodal5/4.webp',
-        )
-    ),
-    array(
-        "card-title" => "تیتر کارت ششم",
-        "title" => "تایتل ششم",
-        "subtitle" => "ساب تایتل ششم ",
-        "image_src" => get_template_directory_uri().'/img/gallery/workmodal6/1.webp',
-        "modal_id" => "#workModal6",
-        "text" => "متن آلبوم ششم",
-        "images" => array(
-            get_template_directory_uri().'/img/gallery/workmodal6/1.webp',
-            get_template_directory_uri().'/img/gallery/workmodal6/2.webp',
-            get_template_directory_uri().'/img/gallery/workmodal6/3.webp',
-            get_template_directory_uri().'/img/gallery/workmodal6/4.webp',
-        )
-    ),
-    array(
-        "card-title" => "تیتر کارت هفتم",
-        "title" => "تایتل هفتم",
-        "subtitle" => "ساب تایتل هفتم ",
-        "image_src" => get_template_directory_uri().'/img/gallery/workmodal7/1.webp',
-        "modal_id" => "#workModal7",
-        "text" => "متن آلبوم هفتم",
-        "images" => array(
-            get_template_directory_uri().'/img/gallery/workmodal7/1.webp',
-            get_template_directory_uri().'/img/gallery/workmodal7/2.webp',
-            get_template_directory_uri().'/img/gallery/workmodal7/3.webp',
-            get_template_directory_uri().'/img/gallery/workmodal7/4.webp',
-        )
-    ),
-    array(
-        "card-title" => "تیتر کارت هشتم",
-        "title" => "تایتل هشتم",
-        "subtitle" => "ساب تایتل هشتم ",
-        "image_src" => get_template_directory_uri().'/img/gallery/workmodal8/1.webp',
-        "modal_id" => "#workModal8",
-        "text" => "متن آلبوم هشتم",
-        "images" => array(
-            get_template_directory_uri().'/img/gallery/workmodal8/1.webp',
-            get_template_directory_uri().'/img/gallery/workmodal8/2.webp',
-            get_template_directory_uri().'/img/gallery/workmodal8/3.webp',
-            get_template_directory_uri().'/img/gallery/workmodal8/4.webp',
-        )
-    ),
-    array(
-        "card-title" => "تیتر کارت نهم",
-        "title" => "تایتل نهم",
-        "subtitle" => "ساب تایتل نهم ",
-        "image_src" => get_template_directory_uri().'/img/gallery/workmodal9/1.webp',
-        "modal_id" => "#workModal9",
-        "text" => "متن آلبوم نهم",
-        "images" => array(
-            get_template_directory_uri().'/img/gallery/workmodal9/1.webp',
-            get_template_directory_uri().'/img/gallery/workmodal9/2.webp',
-            get_template_directory_uri().'/img/gallery/workmodal9/3.webp',
-            get_template_directory_uri().'/img/gallery/workmodal9/4.webp',
-        )
-    )
-);
-?>
-
-<body class=" bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
-<div class=" col-12">
-        <ul class=" text-white navbar-light filters text-center">
-            <li class="active" data-filter="*"><a href="#!">همه</a></li>
-            <li data-filter=".graphic"><a href="#!">گلخانه تونلی</a></li>
-            <li data-filter=".uiUx"><a href="#!">گلخانه شیشه ای هلندی</a></li>
-            <li data-filter=".exhibition"><a href="#!">گلخانه اسپانیایی تیپ دو</a></li>
-            <li data-filter=".archi"><a href="#!">گلخانه اسپانیایی تیپ یک</a></li>
-        </ul>
-
-        <div class="projects">
-            <div class="row col-12">
-                <div class="card col-12  col-md-4 item graphic">
-                    <img class="card-img-top work-img" src="<?php echo $albums[0]['image_src']; ?>" data-toggle="modal" data-target="<?php echo $albums[0]['modal_id']; ?>" />
-                    <div class="text-center h-10">
-                        <h2 class="flex flex-col items-center justify-center bg-gray-900 text-white h-full py-3 text-sm hover:text-sky-400">
-                            <?php echo $albums[0]['card-title']; ?>
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="card col-12 col-md-4 item uiUx">
-                    <img class="card-img-top work-img" src="<?php echo $albums[1]['image_src']; ?>" data-toggle="modal" data-target="<?php echo $albums[1]['modal_id']; ?>" />
-                    <div class="text-center h-10">
-                        <h2 class="flex flex-col items-center justify-center bg-gray-900 text-white h-full py-3 text-sm hover:text-sky-400">
-                            <?php echo $albums[1]['card-title']; ?>
-                        </h2>
-                    </div>
-                </div>
-
-
-                <div class="card col-12 col-md-4 item exhibition">
-                    <img class="card-img-top work-img" src="<?php echo $albums[2]['image_src']; ?>" data-toggle="modal" data-target="<?php echo $albums[2]['modal_id']; ?>" />
-                    <div class="text-center h-10">
-                        <h2 class="flex flex-col items-center justify-center bg-gray-900 text-white h-full py-3 text-sm hover:text-sky-400">
-                            <?php echo $albums[2]['card-title']; ?>
-                        </h2>
-                    </div>
-                </div>
-
-                <!-- Card for Album4 -->
-                <div class="card col-12 col-md-4 item exhibition">
-                    <img class="card-img-top work-img" src="<?php echo $albums[3]['image_src']; ?>" data-toggle="modal" data-target="<?php echo $albums[3]['modal_id']; ?>" />
-                    <div class="text-center h-10">
-                        <h2 class="flex flex-col items-center justify-center bg-gray-900 text-white h-full py-3 text-sm hover:text-sky-400">
-                            <?php echo $albums[3]['card-title']; ?>
-                        </h2>
-                    </div>
-                </div>
-
-                <!-- Card for Album5 -->
-                <div class="card col-12 col-md-4 item exhibition">
-                    <img class="card-img-top work-img" src="<?php echo $albums[4]['image_src']; ?>" data-toggle="modal" data-target="<?php echo $albums[4]['modal_id']; ?>" />
-                    <div class="text-center h-10">
-                        <h2 class="flex flex-col items-center justify-center bg-gray-900 text-white h-full py-3 text-sm hover:text-sky-400">
-                            <?php echo $albums[4]['card-title']; ?>
-                        </h2>
-                    </div>
-                </div>
-
-                <!-- Card for Album6 -->
-                <div class="card col-12 col-md-4 item archi">
-                    <img class="card-img-top work-img" src="<?php echo $albums[5]['image_src']; ?>" data-toggle="modal" data-target="<?php echo $albums[5]['modal_id']; ?>" />
-                    <div class="text-center h-10">
-                        <h2 class="flex flex-col items-center justify-center bg-gray-900 text-white h-full py-3 text-sm hover:text-sky-400">
-                            <?php echo $albums[5]['card-title']; ?>
-                        </h2>
-                    </div>
-                </div>
-
-                <!-- Card for Album7 -->
-                <div class="card col-12 col-md-4 item archi">
-                    <img class="card-img-top work-img" src="<?php echo $albums[6]['image_src']; ?>" data-toggle="modal" data-target="<?php echo $albums[6]['modal_id']; ?>" />
-                    <div class="text-center h-10">
-                        <h2 class="flex flex-col items-center justify-center bg-gray-900 text-white h-full py-3 text-sm hover:text-sky-400">
-                            <?php echo $albums[6]['card-title']; ?>
-                        </h2>
-                    </div>
-                </div>
-
-                <!-- Card for Album8 -->
-                <div class="card col-12 col-md-4 item archi">
-                    <img class="card-img-top work-img" src="<?php echo $albums[7]['image_src']; ?>" 
-                    data-toggle="modal" data-target="<?php echo $albums[7]['modal_id']; ?>" />
-                    <div class="text-center h-10">
-                        <h2 class="flex flex-col items-center justify-center bg-gray-900 text-white h-full py-3 text-sm hover:text-sky-400">
-                            <?php echo $albums[7]['card-title']; ?>
-                        </h2>
-                    </div>
-                </div>
-                <!-- Card for Album9 -->
-                <div class="card col-12 col-md-4 item archi">
-                    <img class="card-img-top work-img" src="<?php echo $albums[8]['image_src']; ?>" data-toggle="modal" 
-                    data-target="<?php echo $albums[8]['modal_id']; ?>" />
-                    <div class="text-center h-10">
-                        <h2 class="flex flex-col items-center justify-center bg-gray-900 text-white h-full py-3 text-sm hover:text-sky-400">
-                            <?php echo $albums[8]['card-title']; ?>
-                        </h2>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-
-
-
-    <!-- modal1 -->
-    <div class="modal fade" id="workModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="upper">
-                        <div class="text">
-                            <h2><?php echo $albums[0]['title']; ?></h2>
-                            <h3><?php echo $albums[0]['subtitle']; ?></h3>
-                            <p><?php echo $albums[0]['text']; ?></p>
-                        </div>
-                        <div class="product-image">
-                            <img class="active1">
-                        </div>
-                    </div>
-                    <div class="sideImg">
-                        <ul class="image-list">
-                            <li class="image-item">
-                                <img src="<?php echo $albums[0]['images'][0]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[0]['images'][1]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[0]['images'][2]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[0]['images'][3]; ?>">
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- modal1 end -->
-
-
-    <!-- modal2 -->
-    <div class="modal fade" id="workModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-
-                    <div class="upper">
-                        <div class="text">
-                            <h2><?php echo $albums[1]['title']; ?></h2>
-                            <h3><?php echo $albums[1]['subtitle']; ?></h3>
-                            <p><?php echo $albums[1]['text']; ?></p>
-                        </div>
-
-                        <div class="product-image">
-                            <img class="active1">
-                        </div>
-                    </div>
-                    <div class="sideImg">
-                        <ul class="image-list">
-                            <li class="image-item">
-                                <img src="<?php echo $albums[1]['images'][0]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[1]['images'][1]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[1]['images'][2]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[1]['images'][3]; ?>">
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- modal2 end -->
-
-    <!-- modal3 -->
-    <div class="modal fade" id="workModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="upper">
-                        <div class="text">
-                            <h2><?php echo $albums[2]['title']; ?></h2>
-                            <h3><?php echo $albums[2]['subtitle']; ?></h3>
-                            <p><?php echo $albums[2]['text']; ?></p>
-                        </div>
-                        <div class="product-image">
-                            <img class="active1">
-                        </div>
-                    </div>
-                    <div class="sideImg">
-                        <ul class="image-list">
-                            <li class="image-item">
-                                <img src="<?php echo $albums[2]['images'][0]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[2]['images'][1]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[2]['images'][2]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[2]['images'][3]; ?>">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal3 end -->
-
-    <!-- modal4 -->
-    <div class="modal fade" id="workModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="upper">
-                        <div class="text">
-                            <h2><?php echo $albums[3]['title']; ?></h2>
-                            <h3><?php echo $albums[3]['subtitle']; ?></h3>
-                            <p><?php echo $albums[3]['text']; ?></p>
-                        </div>
-                        <div class="product-image">
-                            <img class="active1">
-                        </div>
-                    </div>
-                    <div class="sideImg">
-                        <ul class="image-list">
-                            <li class="image-item">
-                                <img src="<?php echo $albums[3]['images'][0]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[3]['images'][1]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[3]['images'][2]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[3]['images'][3]; ?>">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- modal4 end -->
-
-    <!-- modal5 -->
-    <div class="modal fade" id="workModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="upper">
-                        <div class="text">
-                            <h2><?php echo $albums[4]['title']; ?></h2>
-                            <h3><?php echo $albums[4]['subtitle']; ?></h3>
-                            <p><?php echo $albums[4]['text']; ?></p>
-                        </div>
-                        <div class="product-image">
-                            <img class="active1">
-                        </div>
-                    </div>
-                    <div class="sideImg">
-                        <ul class="image-list">
-                            <li class="image-item">
-                                <img src="<?php echo $albums[4]['images'][0]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[4]['images'][1]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[4]['images'][2]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[4]['images'][3]; ?>">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal5 end -->
-
-    <!-- modal6 -->
-    <div class="modal fade" id="workModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="upper">
-                        <div class="text">
-                            <h2><?php echo $albums[5]['title']; ?></h2>
-                            <h3><?php echo $albums[5]['subtitle']; ?></h3>
-                            <p><?php echo $albums[5]['text']; ?></p>
-                        </div>
-                        <div class="product-image">
-                            <img class="active1">
-                        </div>
-                    </div>
-                    <div class="sideImg">
-                        <ul class="image-list">
-                            <li class="image-item">
-                                <img src="<?php echo $albums[5]['images'][0]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[5]['images'][1]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[5]['images'][2]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[5]['images'][3]; ?>">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal6 end -->
-
-    <!-- modal7 -->
-    <div class="modal fade" id="workModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="upper">
-                        <div class="text">
-                            <h2><?php echo $albums[6]['title']; ?></h2>
-                            <h3><?php echo $albums[6]['subtitle']; ?></h3>
-                            <p><?php echo $albums[6]['text']; ?></p>
-                        </div>
-                        <div class="product-image">
-                            <img class="active1">
-                        </div>
-                    </div>
-                    <div class="sideImg">
-                        <ul class="image-list">
-                            <li class="image-item">
-                                <img src="<?php echo $albums[6]['images'][0]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[6]['images'][1]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[6]['images'][2]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[6]['images'][3]; ?>">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal7 end -->
-
-    <!-- modal8 -->
-    <div class="modal fade" id="workModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="upper">
-                        <div class="text">
-                            <h2><?php echo $albums[7]['title']; ?></h2>
-                            <h3><?php echo $albums[7]['subtitle']; ?></h3>
-                            <p><?php echo $albums[7]['text']; ?></p>
-                        </div>
-                        <div class="product-image">
-                            <img class="active1">
-                        </div>
-                    </div>
-                    <div class="sideImg">
-                        <ul class="image-list">
-                            <li class="image-item">
-                                <img src="<?php echo $albums[7]['images'][0]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[7]['images'][1]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[7]['images'][2]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[7]['images'][3]; ?>">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal8 end -->
-
-    <!-- modal9 -->
-    <div class="modal fade" id="workModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="upper">
-                        <div class="text">
-                            <h2><?php echo $albums[8]['title']; ?></h2>
-                            <h3><?php echo $albums[8]['subtitle']; ?></h3>
-                            <p><?php echo $albums[8]['text']; ?></p>
-                        </div>
-                        <div class="product-image">
-                            <img class="active1">
-                        </div>
-                    </div>
-                    <div class="sideImg">
-                        <ul class="image-list">
-                            <li class="image-item">
-                                <img src="<?php echo $albums[8]['images'][0]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[8]['images'][1]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[8]['images'][2]; ?>">
-                            </li>
-                            <li class="image-item">
-                                <img src="<?php echo $albums[8]['images'][3]; ?>">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal9 end -->
-</body>
-
+        </script>
+    </body>
 </html>
 
-<?PHP get_footer(); ?>
+
+
+<?php
+get_footer();
+?>
