@@ -4,7 +4,7 @@ get_header();
 
 <div>
     <div class="flex flex-col justify-center items-center h-400 drop-shadow-lg">
-        <div class=" bg-cover bg-no-repeat w-full" style="background-image: url(<?php echo get_template_directory_uri().'/img/another/gallexy.webp' ?>);">
+        <div class=" bg-cover bg-no-repeat w-full" style="background-image: url(<?php echo get_template_directory_uri().'/img/another/gallexy-x.jpg' ?>);">
             <h1 class=" py-10 font-black text-7xl md:text-8xl bg-gray-100 mix-blend-lighten uppercase text-center">
                 گلخانه سازی <br>
                 گل افروز <br>
@@ -45,7 +45,7 @@ get_header();
                 <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
                     <!-- image - start -->
                     <a href="<?php echo home_url()."/گلخانه-تونلی/"; ?>"class="group relative flex h-48 items-center justify-center text-center overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                        <img src="<?php echo get_template_directory_uri().'/img/greenhouse/1.webp' ?>" loading="lazy" alt="golafrooz" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                        <img src="<?php echo get_template_directory_uri().'/img/greenhouse/front-toneli.jpg' ?>" loading="lazy" alt="golafrooz" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                         </div>
@@ -57,7 +57,7 @@ get_header();
 
                     <!-- image - start -->
                     <a href="<?php echo home_url()."/گلخانه-اسپانیایی-تیپ-یک/"; ?>" class="group relative flex h-48 items-center justify-center text-center overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                        <img src="<?php echo get_template_directory_uri() . '/img/greenhouse/2.webp' ?>" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                        <img src="<?php echo get_template_directory_uri() . '/img/greenhouse/front-spain-tip1.jpg' ?>" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                         </div>
@@ -70,7 +70,7 @@ get_header();
 
                     <!-- image - start -->
                     <a href="<?php echo home_url()."/گلخانه-شیشه-ای-هلندی/"; ?>" class="group relative flex h-48 items-center justify-center text-center overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                        <img src="<?php echo get_template_directory_uri() . '/img/greenhouse/3.webp' ?>" loading="lazy" alt="Photo by Martin Sanchez" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                        <img src="<?php echo get_template_directory_uri() . '/img/greenhouse/front-holandi.jpg' ?>" loading="lazy" alt="Photo by Martin Sanchez" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                         </div>
@@ -83,7 +83,7 @@ get_header();
 
                     <!-- image - start -->
                     <a href="<?php echo home_url()."/گلخانه-اسپانیایی-تیپ-دو/"; ?>" class="group relative flex h-48 items-center justify-center text-center overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                        <img src="<?php echo get_template_directory_uri() . '/img/greenhouse/4.webp' ?>" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                        <img src="<?php echo get_template_directory_uri() . '/img/greenhouse/front-spain-tip2.jpg' ?>" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                         </div>

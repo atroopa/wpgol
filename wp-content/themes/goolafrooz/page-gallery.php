@@ -3,13 +3,10 @@
 
 get_header();
 ?>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Golafrooz Gallery</title>
-        <style>
+
+    <div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <style>
             .img_box img {
                 width: 300px;
                 height: 400px;
@@ -17,10 +14,6 @@ get_header();
                 max-width: 100%;
             }
         </style>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body>
         <!-- ------------------------ اسپانیایی تیپ یک ----------------------------- -->
         <div class="felx flex-col items-center justify-center py-10">
             <section class="relative z-10 overflow-hidden bg-gray-900 py-16 px-8 mt-10">
@@ -50,32 +43,32 @@ get_header();
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <div class="img_box">
-                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt>
+                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt="گلخانه سازی">
                             </div>
                         </li>
                         <li class="splide__slide">
                             <div class="img_box">
-                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt>
+                                <img src="<?php echo get_template_directory_uri().'/images/2.webp' ?>" alt="گلخانه سازی">
                             </div>
                         </li>
                         <li class="splide__slide">
                             <div class="img_box">
-                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt>
+                                <img src="<?php echo get_template_directory_uri().'/images/3.webp' ?>" alt="گلخانه سازی">
                             </div>
                         </li>
                         <li class="splide__slide">
                             <div class="img_box">
-                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt>
+                                <img src="<?php echo get_template_directory_uri().'/images/4.webp' ?>" alt="گلخانه سازی">
                             </div>
                         </li>
                         <li class="splide__slide">
                             <div class="img_box">
-                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt>
+                                <img src="<?php echo get_template_directory_uri().'/images/5.webp' ?>" alt="گلخانه سازی">
                             </div>
                         </li>
                         <li class="splide__slide">
                             <div class="img_box">
-                                <img src="<?php echo get_template_directory_uri().'/images/1.webp' ?>" alt>
+                                <img src="<?php echo get_template_directory_uri().'/images/6.webp' ?>" alt="گلخانه سازی">
                             </div>
                         </li>
                     </ul>
@@ -277,7 +270,6 @@ get_header();
                     perPage: 4,
                     gap: '1.5rem',
                     padding: '3rem',
-                    focus: 'center',
                     type: 'loop',
                     drag: 'free',
                     snap: true,
@@ -359,8 +351,7 @@ get_header();
                 splide4.mount();
             });
         </script>
-    </body>
-</html>
+    </div>
 
 
 

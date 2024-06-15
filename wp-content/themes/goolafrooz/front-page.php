@@ -24,10 +24,10 @@
 <section class="w-full">
   <div class="slider-wrapper">
     <div class="slider">
-      <img id="slide-1" src="<?php echo get_template_directory_uri().'/img/home-slider/10.jpg' ?>" alt="golafrooz">
-      <img id="slide-2" src="<?php echo get_template_directory_uri().'/img/home-slider/20.jpg' ?>" alt="golafrooz">
-      <img id="slide-3" src="<?php echo get_template_directory_uri().'/img/home-slider/30.jpg' ?>" alt="golafrooz">
-      <img id="slide-4" src="<?php echo get_template_directory_uri().'/img/home-slider/40.jpg' ?>" alt="golafrooz">
+      <img id="slide-1" src="<?php echo get_template_directory_uri().'/img/home-slider/1-y.jpg' ?>" alt="golafrooz">
+      <img id="slide-2" src="<?php echo get_template_directory_uri().'/img/home-slider/2-x.jpg' ?>" alt="golafrooz">
+      <img id="slide-3" src="<?php echo get_template_directory_uri().'/img/home-slider/3-y.jpg' ?>" alt="golafrooz">
+      <img id="slide-4" src="<?php echo get_template_directory_uri().'/img/home-slider/4-y.jpg' ?>" alt="golafrooz">
     </div>
     <div class="slider-nav">
       <a href="#slide-1"></a>
@@ -98,7 +98,7 @@
     <div class="relative pt-10 px-10 flex items-center justify-center">
       <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
       </div>
-      <img class="relative w-40" src="<?php echo get_template_directory_uri().'/img/gol/10.png' ?>" alt="">
+      <img class="relative w-40" src="<?php echo get_template_directory_uri().'/img/gol/1-x.png' ?>" alt="">
     </div>
     <div class="relative text-white px-6 pb-6 mt-6">
 
@@ -117,7 +117,7 @@
     <div class="relative pt-10 px-10 flex items-center justify-center">
       <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
       </div>
-      <img class="relative w-40" src="<?php echo get_template_directory_uri().'/img/gol/20.png' ?>" alt="">
+      <img class="relative w-40" src="<?php echo get_template_directory_uri().'/img/gol/2-x.png' ?>" alt="">
     </div>
     <div class="relative text-white px-6 pb-6 mt-6">
       <span class="block opacity-75 mb-1 text-right">راهنمای</span>
@@ -136,7 +136,7 @@
     <div class="relative pt-10 px-10 flex items-center justify-center">
       <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
       </div>
-      <img class="relative w-40 h-48" src="<?php echo get_template_directory_uri().'/img/gol/30.png' ?>" alt="">
+      <img class="relative w-40 h-48" src="<?php echo get_template_directory_uri().'/img/gol/3-x.png' ?>" alt="">
     </div>
     <div class="relative text-white px-6 pb-6 mt-6">
       <span class="block opacity-75 mb-1 text-right">راهنمای</span>
@@ -155,7 +155,7 @@
     <div class="relative pt-10 px-10 flex items-center justify-center">
       <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
       </div>
-      <img class="relative w-40 h-48" src="<?php echo get_template_directory_uri().'/img/gol/40.png' ?>" alt="">
+      <img class="relative w-40 h-48" src="<?php echo get_template_directory_uri().'/img/gol/4-x.png' ?>" alt="">
     </div>
     <div class="relative text-white px-6 pb-6 mt-6">
       <span class="block opacity-75 mb-1 text-right">راهنمای</span>
@@ -223,9 +223,7 @@
     </div>
   </section>
 
-
   <!-- <div>------------------نمونه کار-----------------</div> -->
-
 
   <div class="m-5 w-full">
   </div>
@@ -306,7 +304,7 @@
   <div class="mx-auto max-w-6xl px-6 p-8 ">
     <div class="flex">
       <div class="group relative h-96 w-24 hover:w-[6rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
-        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/1.webp' ?>" alt="golafrooz"  class="h-full max-w-300 object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all" alt="green house" />
+        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/1-x.jpg' ?>" alt="golafrooz"  class="h-full max-w-300 object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all" alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
             <div class="flex gap-3 text-white">
@@ -330,7 +328,7 @@
         </div>
       </div>
       <div class="group relative h-96 w-24  hover:w-[6rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
-        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/2.webp' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
+        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/2-x.jpg' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8 ">
             <div class="flex gap-3 text-white">
@@ -355,7 +353,7 @@
         </div>
       </div>
       <div class="group relative h-96 w-24  hover:w-[6rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
-        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/3.webp' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
+        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/3-x.png' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
             <div class="flex gap-3 text-white content-end items-end">
@@ -378,7 +376,7 @@
         </div>
       </div>
       <div class="hidden lg:block group relative h-96 w-24 hover:w-[6rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
-        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/5.webp' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
+        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/5-x.jpg' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
             <div class="flex gap-3 text-white">
@@ -402,7 +400,7 @@
         </div>
       </div>
       <div class="hidden lg:block group relative h-96 w-24 hover:w-[6rem]  md:hover:w-[30rem] cursor-pointer overflow-hidden transition-all duration-100 md:duration-200">
-        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/4.webp' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
+        <img src="<?php echo get_template_directory_uri().'/img/front-gallery/4-x.jpg' ?>" class="h-full object-cover group-hover:rotate-5 md:group-hover:rotate-12 group-hover:scale-125 transition-all"  alt="green house" />
         <div class="invisible absolute inset-0 bg-gradient-to-b from-green-500/20 to-black group-hover:visible">
           <div class="absolute bottom-6 left-8">
             <div class="flex gap-3 text-white">
