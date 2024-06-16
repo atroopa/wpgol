@@ -72,8 +72,8 @@ add_action('wp_head', 'custom_seo_meta_tags');
              class="w-full h-auto mb-8">
 
         <!-- Blog post content -->
-        <div class="py-5 prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
-        <?php echo $content ?>
+        <div class="py-5 text-xl prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
+        <?php echo nl2br($content); ?>
         </div>
     </div>
 </div>
