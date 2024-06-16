@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/img/logo/golafrooz.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="<?php echo get_template_directory_uri() ?>/css/style.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -28,11 +28,6 @@
   </script>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
-
-    .font-roboto {
-      font-family: Manrope, sans-serif;
-    }
 
     .rounded-large {
       border-radius: 4rem;
@@ -130,7 +125,6 @@
     }
   </style>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
     .navbar * {
       box-sizing: border-box;
@@ -144,7 +138,6 @@
     .navbar a,
     .navbar button,
     .navbar .logo {
-      font-family: "Montserrat", sans-serif;
       font-weight: 500;
       font-size: 14px;
       color: whitesmoke;
@@ -312,7 +305,7 @@
 
 </head>
 
-<body>
+<body >
   <div class="navbar ">
 
     <header>
