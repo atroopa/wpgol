@@ -23,7 +23,7 @@ get_header();
                 <div class="relative overflow-hidden mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                     <!-- team block -->
                     <div class="relative overflow-hidden px-6">
-                        <img  src="<?php echo get_template_directory_uri().'/img/employees/10.webp' ?>" class="w-[140px] h-[140px] mx-auto rounded-full border-4 bg-gray-10 " alt="title image">
+                        <img  src="<?php echo get_template_directory_uri().'/img/employees/1.jpg' ?>" class="w-[140px] h-[140px] mx-auto rounded-full border-4 bg-gray-10 " alt="title image">
                     </div>
                     <div class="pt-6 text-center">
                         <p class="text-lg leading-normal font-bold mb-1"> الناز لقمانی</p>
@@ -44,7 +44,7 @@ get_header();
                 <!-- team block -->
                 <div class="relative overflow-hidden mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
                     <div class="relative overflow-hidden px-6">
-                        <img  src="<?php echo get_template_directory_uri().'/img/employees/20.webp' ?>" class="w-[140px] h-[140px] mx-auto rounded-full border-4 bg-gray-10 " alt="title image">
+                        <img  src="<?php echo get_template_directory_uri().'/img/employees/2.jpg' ?>" class="w-[140px] h-[140px] mx-auto rounded-full border-4 bg-gray-10 " alt="title image">
                     </div>
                     <div class="pt-6 text-center">
                         <p class="text-lg leading-normal font-bold mb-1">سارا الوند</p>
@@ -65,7 +65,7 @@ get_header();
                 <!-- team block -->
                 <div class="relative overflow-hidden mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
                     <div class="relative overflow-hidden px-6">
-                        <img src="<?php echo get_template_directory_uri().'/img/employees/30.webp' ?>" class="w-[140px] h-[140px] mx-auto rounded-full border-4 bg-gray-10 " alt="title image">
+                        <img src="<?php echo get_template_directory_uri().'/img/employees/3.jpg' ?>" class="w-[140px] h-[140px] mx-auto rounded-full border-4 bg-gray-10 " alt="title image">
                     </div>
                     <div class="pt-6 text-center">
                         <p class="text-lg leading-normal font-bold mb-1">کیانا فیروزی </p>
@@ -86,7 +86,7 @@ get_header();
                 <!-- team block -->
                 <div class="relative overflow-hidden mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
                     <div class="relative overflow-hidden px-6">
-                        <img src="<?php echo get_template_directory_uri().'/img/employees/40.webp' ?>" class="w-[140px] h-[140px] mx-auto rounded-full border-4 bg-gray-10 " alt="title image">
+                        <img src="<?php echo get_template_directory_uri().'/img/employees/4.jpg' ?>" class="w-[140px] h-[140px] mx-auto rounded-full border-4 bg-gray-10 " alt="title image">
                     </div>
                     <div class="pt-6 text-center">
                         <p class="text-lg leading-normal font-bold mb-1"> نیلوفر مهری </p>

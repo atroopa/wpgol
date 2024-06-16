@@ -13,17 +13,17 @@ get_header();
     <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
         <div class="relative">
 
-            <div class= flex items-center justify-center -space-x-2">
-                <img loading="lazy" width="400" height="400" src="<?php echo get_template_directory_uri().'/img/employees/10.webp' ?>" alt="employees greenhouse" class="h-8 w-8 rounded-full object-cover">
-                <img loading="lazy" width="200" height="200" src="<?php echo get_template_directory_uri().'/img/employees/20.webp' ?>" alt="employees greenhouse" class="h-12 w-12 rounded-full object-cover">
-                <img loading="lazy" width="200" height="200" src="<?php echo get_template_directory_uri().'/img/employees/30.webp' ?>" alt="employees greenhouse" class="z-10 h-16 w-16 rounded-full object-cover">
-                <img loading="lazy" width="200" height="200" src="<?php echo get_template_directory_uri().'/img/employees/40.webp' ?>" class="relative h-12 w-12 rounded-full object-cover">
-                <img loading="lazy" width="200" height="200" src="<?php echo get_template_directory_uri().'/img/employees/50.webp' ?>" alt="employees greenhouse" class="h-8 w-8 rounded-full object-cover">
+            <div class="flex items-center justify-center -space-x-2">
+                <img loading="lazy" width="400" height="400" src="<?php echo get_template_directory_uri().'/img/employees/1.jpg' ?>" alt="employees" class="h-8 w-8 rounded-full object-cover">
+                <img loading="lazy" width="200" height="200" src="<?php echo get_template_directory_uri().'/img/employees/2.jpg' ?>" alt="member photo" class="h-12 w-12 rounded-full object-cover">
+                <img loading="lazy" width="200" height="200" src="<?php echo get_template_directory_uri().'/img/employees/3.jpg' ?>" alt="member photo" class="z-10 h-16 w-16 rounded-full object-cover">
+                <img loading="lazy" width="200" height="200" src="<?php echo get_template_directory_uri().'/img/employees/4.jpg' ?>" class="relative h-12 w-12 rounded-full object-cover">
+                <img loading="lazy" width="200" height="200" src="<?php echo get_template_directory_uri().'/img/employees/5.jpg' ?>" alt="member photo" class="h-8 w-8 rounded-full object-cover">
             </div>
 
             <div class="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
-                <h1 class="text-center text-2xl md:text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">
-                    مشاورین گل افروز
+                <h1 class="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">
+                    مشاوران ما آماده اند
                 </h1>
                 <p class="text-center text-xl text-gray-600 dark:text-gray-300">
                     با ما خواهید فهمید که از کجا شروع کنید و چه گلخانه و مصالحه ای مناسب اقلیم شهر شماست! 
