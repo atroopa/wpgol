@@ -22,18 +22,18 @@ $args = array(
 );
 
 $slides = array(
-    array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/hitter-slider_3_11zon.webp"),
+    array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/garmayeshi.jpg"),
     array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/navdani-slider_2_11zon.webp"),
     array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/fan-slider_1_11zon.webp"),
     array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/pipe-slider_11zon.png"),
     array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/mashal-slider_11zon.webp"),
-    array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/profeel-slider_11zon.webp"),
+    array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/ahanalat.jpg"),
     array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/sarsoton-slider_11zon.webp"),
-    array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/poshesh-slider_11zon.png"),
-    array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/generator-slider_11zon.webp"),
-    array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/tajhizat-slider_11zon.webp"),
+    array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/poshesh.jpg"),
+    array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/generator.jpg"),
+    array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/tajhizat.jpg"),
     array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/bast-slider_11zon.webp"),
-    array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/abyari-slider_11zon.webp"),
+    array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/abyari.jpg"),
     array("IMAGE_URL" => get_template_directory_uri() . "/img/slider/webp/sarmayeshi-slider_11zon.webp"),
 );
 
@@ -65,8 +65,6 @@ if ($sub_terms) {
         "greenhouse-poshesh" => array($slides[7]["IMAGE_URL"], $icons[7]["ICON_URL"]),
         "greenhouse-sarsoton" => array($slides[6]["IMAGE_URL"], $icons[6]["ICON_URL"]),
         "greenhouse-profeel" => array($slides[5]["IMAGE_URL"], $icons[5]["ICON_URL"]),
-        "greenhouse-mashal" => array($slides[4]["IMAGE_URL"], $icons[4]["ICON_URL"]),
-        "greenhouse-pipe" => array($slides[3]["IMAGE_URL"], $icons[3]["ICON_URL"]),
         "greenhouse-fan" => array($slides[2]["IMAGE_URL"], $icons[2]["ICON_URL"]),
         "greenhouse-boilers" => array($slides[1]["IMAGE_URL"], $icons[1]["ICON_URL"]),
         "greenhouse-heater" => array($slides[0]["IMAGE_URL"], $icons[0]["ICON_URL"]),

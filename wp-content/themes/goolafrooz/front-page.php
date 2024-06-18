@@ -81,7 +81,7 @@
         </svg>
         <div class="space-y-2">
           <h3 class="font-bold">محصولات</h3>
-          <p class="text-sm text-muted-foreground">بالاترین کیفیت نازلترین قیمت.</p>
+          <p class="text-sm text-muted-foreground">بالاترین کیفیت نازلترین قیمت </p>
         </div>
       </div>
     </div>
