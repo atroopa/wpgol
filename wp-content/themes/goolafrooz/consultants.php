@@ -90,7 +90,7 @@ get_header();
                     </div>
                     <div class="pt-6 text-center">
                         <p class="text-lg leading-normal font-bold mb-1"> نیلوفر مهری </p>
-                        <p class="text-gray-100 leading-relaxed font-light">مشاوره تحصلات بانکی</p>
+                        <p class="text-gray-100 leading-relaxed font-light">مشاوره تسهیلات بانکی</p>
                         <!-- social icon -->
                         <div class="mt-2 mb-5 space-x-2">
                             <a class="hover:text-blue-700" aria-label="Twitter link" href="#">

@@ -334,9 +334,9 @@
       </label>
       <ul class=" nav__links flex flex-col lg:flex-row-reverse">
         <li><a class="active" href="<?php echo home_url(); ?>">صفحه اصلی</a></li>
-        <li><a href="<?php echo home_url()."/گلخانه ها/"; ?>">گلخانه ها</a></li>
+        <li><a href="<?php echo home_url()."/گلخانه ها/"; ?>">انواع گلخانه</a></li>
         <li><a href="<?php echo home_url()."/محصولات/"; ?>">محصولات</a></li>
-        <li><a href="<?php echo home_url()."/خدمات/"; ?>">خدمات</a></li>
+        <li><a href="<?php echo home_url()."/خدمات/"; ?>">مشاوره</a></li>
         <li><a href="<?php echo home_url()."/گالری/"; ?>">گالری</a></li>
         <li><a href="<?php echo home_url()."/مقالات/"; ?>">مقالات</a></li>
         <li><a href="<?php echo home_url()."/تماس با ما/"; ?>">ارتباط با ما</a></li>
