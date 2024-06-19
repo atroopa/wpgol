@@ -377,7 +377,7 @@
         });
       </script>
 
-      <!-- <button  
+      <!-- <button
               id="color-changing"
               class="hidden md:block text-sm md:text-xl rounded-lg bg-blue-700 px-12 py-4
               text-center font-bold text-black hover:bg-blue-900">محصولات و تجهیزات
