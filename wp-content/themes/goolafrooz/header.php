@@ -19,17 +19,29 @@
           xl: '1440px',
         },
         extend: {
-
+            animation: {
+              'color-change': 'color-change 4s infinite',
+              rotate: 'rotate 30s linear infinite',
+            },
+            keyframes: {
+              'color-change': {
+                '0%, 100%': { backgroundColor: 'blue' },
+                '50%': { backgroundColor: 'green' },
+            },
+            },
         },
-        animation: {
-          rotate: 'rotate 30s linear infinite',
-        }
       }
     }
   </script>
 
   <style>
-
+    @keyframes color-change {
+      0%, 100% { background-color: blue; }
+      50% { background-color: green; }
+    }
+    .animate-color-change {
+      animation: color-change 2s infinite;
+    }
     .rounded-large {
       border-radius: 4rem;
     }
@@ -365,7 +377,15 @@
         });
       </script>
 
-      <button href="<?php echo home_url()."/محصولات/"; ?>" id="color-changing" class="hidden md:block text-sm md:text-xl rounded-lg bg-blue-700 px-12 py-4 text-center font-bold text-black hover:bg-blue-900">محصولات و تجهیزات</button>
+      <!-- <button  
+              id="color-changing"
+              class="hidden md:block text-sm md:text-xl rounded-lg bg-blue-700 px-12 py-4
+              text-center font-bold text-black hover:bg-blue-900">محصولات و تجهیزات
+      </button> -->
+      <button href="<?php echo home_url()."/محصولات/"; ?>" class="animate-color-change hidden md:block text-sm md:text-xl rounded-lg bg-blue-700 px-12 py-4
+              text-center font-bold text-black hover:bg-blue-900">
+              محصولات و تجهیزات
+      </button>
 
     </header>
     <div class="w-full h-[18vh] md:h-[23vh] bg-gray-900">
