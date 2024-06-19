@@ -81,7 +81,7 @@
         </svg>
         <div class="space-y-2">
           <h3 class="font-bold">محصولات</h3>
-          <p class="text-sm text-muted-foreground">بالاترین کیفیت نازلترین قیمت </p>
+          <p class="text-sm text-muted-foreground">بالاترین کیفیت نازلترین قیمت</p>
         </div>
       </div>
     </div>
@@ -435,7 +435,63 @@
 <div class="flex flex-row items-center justify-center">
 
 </div>
-<section class="text-gray-900 dark:text-neutral-300">
+<section class="block md:hidden text-gray-900 dark:text-neutral-300">
+  <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
+    <h3 class="mb-6 pt-10 text-3xl font-bold text-gray-900">رضایت شما ارزشمندترین دارایی ماست </h3>
+    <p class="mb-6 pb-2 md:mb-12 md:pb-0 text-gray-900">تیم ما سخت در تلاش است تا بهترین را در حداقل زمان ممکن به شما رائه دهد و ما در شرکت گل افروز بی صبرانه منتظر شنیدن نظرات شما هستیم . </p>
+  </div>
+
+  <?php
+  ob_start();
+  include 'customers.php';
+
+  // بررسی آیا کوکی مربوط به گروه وجود دارد
+  if (!isset($_COOKIE['random_group'])) {
+      // اگر کوکی وجود ندارد، یک گروه تصادفی انتخاب کنید
+      $randomGroupIndex = rand(0, count($groups) - 1);
+      $currentGroup = $groups[$randomGroupIndex]['customers'];
+
+      // ذخیره آی دی گروه در کوکی
+      setcookie('random_group', $randomGroupIndex, time() + (86400 * 30), "/"); // کوکی را برای 30 روز ذخیره می‌کنیم
+  } else {
+      // اگر کوکی وجود دارد، گروه مربوطه را از کوکی بخوانید
+      $randomGroupIndex = $_COOKIE['random_group'];
+      $currentGroup = $groups[$randomGroupIndex]['customers'];
+  }
+  ob_end_flush();
+  ?>
+
+  <div class="p-10">
+    <div id="customer-grid" class="grid gap-6 text-center md:grid-cols-3">
+      <div class="flex md:flex-wrap overflow-x-auto">
+        <?php foreach ($currentGroup as $customer): ?>
+          <div class="flex-none w-full md:w-auto md:flex-1 rounded-lg shadow-lg bg-gray-900 dark:shadow-black/30 m-2">
+            <div class="h-28 overflow-hidden rounded-t-lg bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500"></div>
+            <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+              <img src="<?php echo $customer['image']; ?>" alt="<?php echo $customer['name']; ?>" />
+            </div>
+            <div class="p-6">
+              <h4 class="mb-4 text-2xl font-semibold text-white"><?php echo $customer['name']; ?></h4>
+              <h2 class="mb-4 text-xl font-semibold text-white"><?php echo $customer['city']; ?></h2>
+              <hr />
+              <p class="mt-4">
+                <span class="inline-block pe-2 [&>svg]:w-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                    <path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"/>
+                  </svg>
+                </span>
+                <div class="text-white"><?php echo $customer['review']; ?></div>
+              </p>
+            </div>
+          </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------- Desktop View ----------------------- -->
+<section class="hidden md:block text-gray-900 dark:text-neutral-300">
   <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
     <h3 class="mb-6 pt-10 text-3xl font-bold text-gray-900">رضایت شما ارزشمندترین دارایی ماست </h3>
     <p class="mb-6 pb-2 md:mb-12 md:pb-0 text-gray-900">تیم ما سخت در تلاش است تا بهترین را در حداقل زمان ممکن به شما رائه دهد و ما در شرکت گل افروز بی صبرانه منتظر شنیدن نظرات شما هستیم . </p>
@@ -486,6 +542,8 @@ ob_end_flush();
 </div>
 
 </section>
+
+
 </div>
 
 <?php get_footer(); ?>
