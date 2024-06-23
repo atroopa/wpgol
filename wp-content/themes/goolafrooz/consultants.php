@@ -30,8 +30,8 @@ get_header();
                         <p class="text-gray-100 leading-relaxed font-light"> مشاور ارشد </p>
                         <!-- social icon -->
                         <div class="mt-2 mb-5 space-x-2">
-                            <a class="hover:text-blue-700" href="#">
-                                <button class="bg-transparent hover:bg-blue-500 text-gray-900 font-semibold hover:text-white py-2 px-4 border border-gray-100 hover:border-transparent rounded">
+                            <a class="hover:text-blue-700" href="tel:02191035646">
+                                <button href="tel:02191035646" class="bg-transparent hover:bg-blue-500 text-gray-900 font-semibold hover:text-white py-2 px-4 border border-gray-100 hover:border-transparent rounded">
                                     تماس
                                 </button>
                             </a>
@@ -51,8 +51,8 @@ get_header();
                         <p class="text-gray-100 leading-relaxed font-light">مشاور پیمانکاری</p>
                         <!-- social icon -->
                         <div class="mt-2 mb-5 space-x-2">
-                            <a class="hover:text-blue-700" aria-label="Twitter link" href="#">
-                            <button class="bg-transparent hover:bg-blue-500 text-gray-900 font-semibold hover:text-white py-2 px-4 border border-gray-100 hover:border-transparent rounded">
+                            <a class="hover:text-blue-700" aria-label="Twitter link" href="tel:02191035646">
+                            <button href="tel:02191035646" class="bg-transparent hover:bg-blue-500 text-gray-900 font-semibold hover:text-white py-2 px-4 border border-gray-100 hover:border-transparent rounded">
                                     تماس
                                 </button>
                             </a>
@@ -72,7 +72,7 @@ get_header();
                         <p class="text-gray-100 leading-relaxed font-light">مشاور سازه</p>
                         <!-- social icon -->
                         <div class="mt-2 mb-5 space-x-2">
-                            <a class="hover:text-blue-700" aria-label="Twitter link" href="#">
+                            <a class="hover:text-blue-700" aria-label="Twitter link" href="tel:02191035646">
                             <button class="bg-transparent hover:bg-blue-500 text-gray-900 font-semibold hover:text-white py-2 px-4 border border-gray-100 hover:border-transparent rounded">
                                     تماس
                                 </button>
@@ -93,7 +93,7 @@ get_header();
                         <p class="text-gray-100 leading-relaxed font-light">مشاوره تسهیلات بانکی</p>
                         <!-- social icon -->
                         <div class="mt-2 mb-5 space-x-2">
-                            <a class="hover:text-blue-700" aria-label="Twitter link" href="#">
+                            <a class="hover:text-blue-700" aria-label="Twitter link" href="tel:02191035646" >
                             <button class="bg-transparent hover:bg-blue-500 text-gray-900 font-semibold hover:text-white py-2 px-4 border border-gray-100 hover:border-transparent rounded">
                                     تماس
                                 </button>
