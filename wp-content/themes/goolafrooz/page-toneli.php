@@ -60,10 +60,10 @@ add_action('wp_head', 'custom_seo_meta_tags');
 
 <!-- Blog post with featured image -->
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-3xl mx-auto">
+    <div class="max-w-7xl mx-auto">
         <!-- Blog post header -->
         <div class="py-8">
-            <h1 class="text-3xl font-bold mb-2"> <?php echo $title ?> </h1>
+            <h1 class="text-5xl font-bold mb-2"> <?php echo $title ?> </h1>
         </div>
 
         <!-- Featured image -->
@@ -72,8 +72,8 @@ add_action('wp_head', 'custom_seo_meta_tags');
              class="w-full h-auto mb-8">
 
         <!-- Blog post content -->
-        <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
-        <?php echo $content ?>
+        <div class="py-5 text-2xl prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
+        <?php echo nl2br($content); ?>
         </div>
     </div>
 </div>

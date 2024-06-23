@@ -2,23 +2,24 @@
 ?>
 <?php get_header(); ?>
 <script src="https://cdn.tailwindcss.com"></script>
-<section class="mb-32 bg-gray-100">
+<section class="mb-0 md:mb-32 bg-gray-100">
   <div id="map" class=" relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3234.6227926002107!2d51.0057053!3d35.8337295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dbf9b5e10235b%3A0xadc2aff3d54f937b!2z2KfYs9iq2KfZhiDYp9mE2KjYsdiy2Iwg2qnYsdis2Iwg2LnYuNuM2YXbjNmH2Iwg2KjZhNmI2KfYsSDYt9in2YTZgtin2YbbjCDYtNmF2KfZhNuM2Iwg2KjYsdisINmC2KfYptmF!5e0!3m2!1sfa!2s!4v1714566354377!5m2!1sfa!2s" width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3234.6227926002107!2d51.0057053!3d35.8337295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dbf9b5e10235b%3A0xadc2aff3d54f937b!2z2KfYs9iq2KfZhiDYp9mE2KjYsdiy2Iwg2qnYsdis2Iwg2LnYuNuM2YXbjNmH2Iwg2KjZhNmI2KfYsSDYt9in2YTZgtin2YbbjCDYtNmF2KfZhNuM2Iwg2KjYsdisINmC2KfYptmF!5e0!3m2!1sfa!2s!4v1714566354377!5m2!1sfa!2s" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
   </div>
-  <div class="container px-6 md:px-12 ">
+  <div class="w-full px-0 md:px-12">
     <div class="bg-white block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-gray-300">
       <!-- ---------------------------- -->
       <!-- component -->
-      <div class="py-16 bg-white">
+      <div class="py-0 md:py-16 bg-white">
         <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
           <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
             <div class="md:5/12 lg:w-5/12">
-              <img src="<?php echo get_template_directory_uri() . '/img/contact-us/contact-us.png' ?>" alt="image" loading="lazy" width="" height="">
+              <!-- <img src="<?php //echo get_template_directory_uri() . '/img/contact-us/contact-us.png' ?>" alt="image" loading="lazy" width="" height=""> -->
+              <video src="<?php echo get_template_directory_uri().'/img/video/contact-1.mp4' ?>" autoplay loop playsinline muted ></video>
             </div>
             <div class="md:7/12 lg:w-6/12">
-              <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">شرکت گلخانه سازی گل افروز با هدف ارتقای سطح کشاورزی و ارائه راه‌حل‌های نوین برای کشت گل و گیاه، تأسیس شده است.</h2>
+              <h2 class="text-xl md:text-2xl text-gray-900 font-bold md:text-4xl">شرکت گلخانه سازی گل افروز با هدف ارتقای سطح کشاورزی و ارائه راه‌حل‌های نوین برای کشت گل و گیاه، تأسیس شده است.</h2>
               <p class="mt-6 text-gray-600">ما با بهره‌گیری از دانش روز دنیا، تجهیزات مدرن و هوش مصنوعی، به دنبال ایجاد گلخانه‌هایی هوشمند و پربازده هستیم که ضمن افزایش کیفیت و کمیت محصولات، به حفظ منابع طبیعی و محیط زیست نیز کمک می‌کنند.
 
                 مزایای گلخانه نسبت به کشاورزی سنتی:
@@ -34,7 +35,7 @@
       </div>
       <!-- ---------------------------- -->
       <div class="flex flex-wrap ">
-        <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+        <div class="mt-10 md:mt-0 mb-12 px-10 md:px-0 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
 
           <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
             <input type="hidden" name="action" value="my_contact_form">
@@ -59,8 +60,8 @@
         </div>
 
         <div class=" mt-6 w-full shrink-0 grow-0 basis-auto lg:w-7/12">
-          <div class="flex flex-wrap">
-            <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
+          <div class="flex flex-wrap px-10 md:px-0">
+            <div class=" mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
               <div class="flex items-start">
                 <div class="shrink-0">
                   <div class="inline-block rounded-md bg-gray-900 p-4 text-gray-100">
@@ -77,7 +78,7 @@
                     info@golafrooz.com
                   </p>
                   <p class="px-4 text-right text-sm text-neutral-500">
-                    02632543645
+                    982191035646+
                   </p>
                 </div>
               </div>
@@ -122,7 +123,7 @@
                 </div>
                 <div class="ml-6 grow">
                   <p class="mb-2 px-4 text-right font-bold ">فکس</p>
-                  <p class="text-neutral-500 text-right px-4"> 02632543645
+                  <p class="text-neutral-500 text-right px-4"> 982191035646+
                   </p>
                 </div>
               </div>
@@ -138,7 +139,7 @@
                 </div>
                 <div class="ml-6 grow">
                   <p class="mb-2 font-bold px-4 text-right ">موبایل</p>
-                  <p class="text-neutral-500 px-4 text-right"> 989147281416+
+                  <p class="text-neutral-500 px-4 text-right"> 989195900820+
                   </p>
                 </div>
               </div>

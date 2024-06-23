@@ -20,6 +20,8 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+define('WP_CACHE', true);
+define( 'WPCACHEHOME', '/var/www/html/wp-content/plugins/wp-super-cache/' );
 define( 'DB_NAME', 'henry' );
 
 /** Database username */
@@ -84,8 +86,8 @@ define( 'WP_DEBUG', false );
 /* Add any custom values between this line and the "stop editing" line. */
 
 /** Define WP_HOME and WP_SITEURL */
-//define( 'WP_HOME', 'https://wordpress-golafrooz.chbk.run/' );
-//define( 'WP_SITEURL', 'https://wordpress-golafrooz.chbk.run/' );
+//define( 'WP_HOME', 'https://golafrooz.co/' );
+//define( 'WP_SITEURL', 'https://golafrooz.co/' );
 
 /* That's all, stop editing! Happy publishing. */
 

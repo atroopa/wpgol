@@ -23,11 +23,11 @@ get_header();
                 <div class="relative overflow-hidden mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
                     <!-- team block -->
                     <div class="relative overflow-hidden px-6">
-                        <img src="https://tailone.tailwindtemplate.net/src/img/dummy/avatar1.png" class="max-w-full h-auto mx-auto rounded-full border-4 bg-gray-10 grayscale" alt="title image">
+                        <img  src="<?php echo get_template_directory_uri().'/img/employees/1.jpg' ?>" class="w-[140px] h-[140px] mx-auto rounded-full border-4 bg-gray-10 " alt="title image">
                     </div>
                     <div class="pt-6 text-center">
-                        <p class="text-lg leading-normal font-bold mb-1">فرهاد پیروند</p>
-                        <p class="text-gray-100 leading-relaxed font-light">مشاور مصالح گلخانه</p>
+                        <p class="text-lg leading-normal font-bold mb-1"> الناز لقمانی</p>
+                        <p class="text-gray-100 leading-relaxed font-light"> مشاور ارشد </p>
                         <!-- social icon -->
                         <div class="mt-2 mb-5 space-x-2">
                             <a class="hover:text-blue-700" href="#">
@@ -44,7 +44,7 @@ get_header();
                 <!-- team block -->
                 <div class="relative overflow-hidden mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
                     <div class="relative overflow-hidden px-6">
-                        <img src="https://tailone.tailwindtemplate.net/src/img/dummy/avatar3.png" class="max-w-full h-auto mx-auto rounded-full border-4 bg-gray-10 grayscale" alt="title image">
+                        <img  src="<?php echo get_template_directory_uri().'/img/employees/2.jpg' ?>" class="w-[140px] h-[140px] mx-auto rounded-full border-4 bg-gray-10 " alt="title image">
                     </div>
                     <div class="pt-6 text-center">
                         <p class="text-lg leading-normal font-bold mb-1">سارا الوند</p>
@@ -65,10 +65,10 @@ get_header();
                 <!-- team block -->
                 <div class="relative overflow-hidden mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
                     <div class="relative overflow-hidden px-6">
-                        <img src="https://tailone.tailwindtemplate.net/src/img/dummy/avatar2.png" class="max-w-full h-auto mx-auto rounded-full border-4 bg-gray-10 grayscale" alt="title image">
+                        <img src="<?php echo get_template_directory_uri().'/img/employees/3.jpg' ?>" class="w-[140px] h-[140px] mx-auto rounded-full border-4 bg-gray-10 " alt="title image">
                     </div>
                     <div class="pt-6 text-center">
-                        <p class="text-lg leading-normal font-bold mb-1">دانیال طیبی</p>
+                        <p class="text-lg leading-normal font-bold mb-1">کیانا فیروزی </p>
                         <p class="text-gray-100 leading-relaxed font-light">مشاور سازه</p>
                         <!-- social icon -->
                         <div class="mt-2 mb-5 space-x-2">
@@ -86,11 +86,11 @@ get_header();
                 <!-- team block -->
                 <div class="relative overflow-hidden mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
                     <div class="relative overflow-hidden px-6">
-                        <img src="https://tailone.tailwindtemplate.net/src/img/dummy/avatar4.png" class="max-w-full h-auto mx-auto rounded-full border-4 bg-gray-10 grayscale" alt="title image">
+                        <img src="<?php echo get_template_directory_uri().'/img/employees/4.jpg' ?>" class="w-[140px] h-[140px] mx-auto rounded-full border-4 bg-gray-10 " alt="title image">
                     </div>
                     <div class="pt-6 text-center">
-                        <p class="text-lg leading-normal font-bold mb-1">علی مدنی</p>
-                        <p class="text-gray-100 leading-relaxed font-light">مشاوره تحصلات بانکی</p>
+                        <p class="text-lg leading-normal font-bold mb-1"> نیلوفر مهری </p>
+                        <p class="text-gray-100 leading-relaxed font-light">مشاوره تسهیلات بانکی</p>
                         <!-- social icon -->
                         <div class="mt-2 mb-5 space-x-2">
                             <a class="hover:text-blue-700" aria-label="Twitter link" href="#">

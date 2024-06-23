@@ -3,7 +3,7 @@
 
 <footer class="relative  text-center font-bold text-brown lg:text-left ">
   <div class="bg-cover bg-no-repeat md:bg-cover bg-center w-full h-max-screen md:h-full "
-  style="background-image: url(<?php echo get_template_directory_uri().'/img/footer/footer-1.png' ?>)">
+  style="background-image: url(<?php echo get_template_directory_uri().'/img/footer/footer-1-x.jpg' ?>)">
     <div class="flex items-center justify-center py-5 md:py-20"></div>
     <div class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between">
       <div class="me-12 hidden lg:block backdrop-blur-2xl bg-white/30  p-5 rounded-2xl">
@@ -36,7 +36,7 @@
     </div>
 
     <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
-    <div class="mx-0 md:mx-6 py-3 text-center md:text-left backdrop-blur-lg bg-white/30  p- rounded-2xl">
+    <div class="mx-0 md:mx-6 md:px-3 py-3 text-center md:text-left backdrop-blur-lg bg-white/30  p- rounded-2xl">
       <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <!-- Contact section -->
         <div>
@@ -75,7 +75,7 @@
             <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
             <svg fill="#000000" width="800px" height="800px" viewBox="-4.5 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12.75 0h-10.5c-1.243 0-2.25 1.008-2.25 2.25v19.5c0 1.243 1.008 2.25 2.25 2.25h10.5c1.243 0 2.25-1.007 2.25-2.25v-19.5c0-1.243-1.008-2.25-2.25-2.25zm-5.25 22.5c-.827-.001-1.497-.671-1.497-1.498s.671-1.498 1.498-1.498 1.498.671 1.498 1.498c0 .414-.168.788-.439 1.059-.271.271-.646.439-1.06.439h-.001z"/></svg>
             </span>
-            <a href="tel:+989147281416">989147281416+</a>
+            <a href="tel:+9195900820">9195900820+</a>
           </p>
 
         </div>
