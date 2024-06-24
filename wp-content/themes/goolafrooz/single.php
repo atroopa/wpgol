@@ -46,6 +46,43 @@ add_action('wp_head', 'custom_seo_meta_tags');
 ?>
 
 <div class="flex flex-col">
+    <style>
+        /* Import Tailwind base styles */
+        @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/base.min.css');
+
+        /* Custom styles */
+        h1 {
+        font-size: 1.5rem; /* Tailwind's text-2xl */
+        line-height: 2rem;
+        }
+        h2 {
+        font-size: 1.25rem; /* Tailwind's text-xl */
+        line-height: 1.75rem;
+        }
+        h3 {
+        font-size: 1.125rem; /* Tailwind's text-lg */
+        line-height: 1.5rem;
+        }
+        a {
+        color: #2563eb; /* Tailwind's text-blue-600 */
+        text-decoration: underline;
+        }
+        b {
+        font-weight: 700; /* Tailwind's font-bold */
+        }
+        strong{
+            font-weight: 700; /* Tailwind's font-bold */
+        }
+        span{
+            font-size: 1.25rem; /* Tailwind's text-xl */
+            line-height: 1.75rem;
+        }
+
+        /* Import Tailwind components and utilities */
+        @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/components.min.css');
+        @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/utilities.min.css');
+
+    </style>
     <div class="bg-gray-100 py-8">
         <?PHP while (have_posts()) {
             the_post(); ?>
@@ -88,8 +125,8 @@ add_action('wp_head', 'custom_seo_meta_tags');
                 <?PHP if (has_post_thumbnail()) { ?>
                     <img src="<?PHP the_post_thumbnail_url(); ?>" alt="<?PHP the_title(); ?>" class="mb-8">
                 <?PHP } ?>
-                <div class="prose max-w-none text-xl py-4 my-2">
-                    <?PHP the_content(); ?>
+                <div class="prose max-w-none  py-4 my-2">
+                    <?PHP echo nl2br($content); ?>
                 </div>
                     <?PHP the_tags('<ul class="p-2 mb-12 whitespace-nowrap no-scrollbar overflow-x-scroll overflow-y-hidden"><li class="w-fit inline-block mx-1 p-3 px-8 border-gray-900 border rounded">#', '</li><li class="w-fit inline-block mx-1 p-3 px-8 border-gray-900 border rounded">#', '</li></ul>'); ?>
             </div>

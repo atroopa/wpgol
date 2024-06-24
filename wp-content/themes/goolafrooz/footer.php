@@ -3,11 +3,8 @@
 
 <footer class="relative  text-center font-bold text-brown lg:text-left ">
   <div class="bg-cover bg-no-repeat md:bg-cover bg-center w-full h-max-screen md:h-full "
-<<<<<<< HEAD
   style="background-image: url(<?php echo get_template_directory_uri().'/img/footer/footer-1-x.jpg' ?>)">
-=======
-  style="background-image: url(<?php echo get_template_directory_uri().'/img/footer/footer-1-min.png' ?>)">
->>>>>>> f4f19860d2774a5a606603cbf1b892f16e2492a2
+
     <div class="flex items-center justify-center py-5 md:py-20"></div>
     <div class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between">
       <div class="me-12 hidden lg:block backdrop-blur-2xl bg-white/30  p-5 rounded-2xl">
@@ -84,7 +81,7 @@
 
         </div>
         <!-- Products section -->
-        <div class="hidden md:block items-center justify-center">
+        <div class="text-black hidden md:block items-center justify-center">
           <h6 class="mb-4 flex flex-col items-start justify-start font-semibold uppercase md:justify-center">
             محصولات
           </h6>
@@ -92,7 +89,7 @@
             'theme_location' => 'footer_one',
             'depth' => '1',
             'container'      => 'div',
-            'menu_class'  => 'text-brown items-start justify-start gap-x-5 w-full flex flex-col',
+            'menu_class'  => 'text-black text-brown items-start justify-start gap-x-5 w-full flex flex-col',
           )); ?>
         </div>
         <!-- Useful links section -->

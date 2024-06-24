@@ -55,7 +55,7 @@ add_action('wp_head', 'custom_seo_meta_tags');
 // echo 'Image alt: ' . ( $image_alt ? $image_alt : 'بدون توضیحات' ) . '<br>';
 // echo 'Focus keyphrase: ' . $focus_keyphrase . '<br>';
 // echo 'SEO title: ' . $seo_title . '<br>';
-// echo 'Meta description: ' . $meta_description . '<br>';s
+// echo 'Meta description: ' . $meta_description . '<br>';
 ?>
 
 <!-- Blog post with featured image -->
@@ -72,11 +72,9 @@ add_action('wp_head', 'custom_seo_meta_tags');
              class="w-full h-auto mb-8">
 
         <!-- Blog post content -->
-<<<<<<< HEAD
+
         <div class="py-5 text-2xl prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
-=======
-        <div class="py-5 text-xl prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
->>>>>>> f4f19860d2774a5a606603cbf1b892f16e2492a2
+
         <?php echo nl2br($content); ?>
         </div>
     </div>
