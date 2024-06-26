@@ -9,7 +9,6 @@ get_header();
         <div class="blur-[106px] h-56 bg-gradient-to-br from-teal-500 to-purple-400 dark:from-blue-700"></div>
         <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
     </div>
-
     <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
         <div class="relative">
 
@@ -26,7 +25,7 @@ get_header();
                     مشاوران ما آماده اند
                 </h1>
                 <p class="text-center text-xl text-gray-600 dark:text-gray-300">
-                    با ما خواهید فهمید که از کجا شروع کنید و چه گلخانه و مصالحه ای مناسب اقلیم شهر شماست! 
+                    با ما خواهید فهمید که از کجا شروع کنید و چه گلخانه و مصالحه ای مناسب اقلیم شهر شماست!
                 </p>
                 <div class="flex flex-wrap justify-center gap-6">
                     <a href="<?php echo home_url()."/مشاوران/"; ?>"
@@ -46,14 +45,14 @@ get_header();
     <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
         <div class="order-1 sm:ml-6 xl:ml-0">
             <h3 class="mb-1 text-slate-900 font-semibold">
-                <span class="mb-1 block text-sm leading-6 text-indigo-500">معماری سازه ها</span>
-                سازه های مدرن و حرفه ای شرکت گلخانه سازی گل افروز
+                <span class="mb-1 block text-sm leading-6 text-indigo-500">مشاوره حضوری یا غیر حضوری</span>
+                مشاوره صفر تا صد گلخانه
             </h3>
             <div class="prose prose-slate prose-sm text-slate-600">
-                <p>آیا می دانستید که سازه ی های مدرن تاثیر بسیار زیادی در کیفیت و کمیت تولید محصولات کشاورزی شما دارد . شرکت گلخانه سازی گل افروز با ارائه بهترین طرح ها و مصالح اماده ارائه خدمات نوین به شما کشاورزان عزیز می باشد. </p>
-            </div><a
-                class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
-                href="">بیشتر بخوانید<span class="sr-only">                سازه های مدرن و حرفه ای شرکت گلخانه سازی گل افروز </span>
+                <p>مشاوره حضوری تنها با وقت قبلی صورت می گیرد و مبلغ ان سه میلیون تومان  در هر یک ساعت می باشد</p>
+                <p>مشاوره تلفنی فقط از ساعت 21 به بعد میسر است و هزینه آن یک میلیون و پانصد هزارتومان در هر یک ساعت می باشد. </p>
+            </div>
+        </span>
                 <svg class="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400"
                     width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">
@@ -65,37 +64,25 @@ get_header();
     <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
         <div class="order-1 sm:ml-6 xl:ml-0">
             <h3 class="mb-1 text-slate-900 font-semibold">
-                <span class="mb-1 block text-sm leading-6 text-purple-500">قرارداد</span>آشنایی با قراردادهای گلخانه سازی گل افروز
+                <span class="mb-1 block text-sm leading-6 text-purple-500">وام گلخانه سازی</span>مشاوره تسهیلات گلخانه سازی
             </h3>
             <div class="prose prose-slate prose-sm text-slate-600">
-                <p>تمامی قراردادها مطابق با نیاز شما طراحی شده و در اختیار شما قرار داده می شود . در این نوع قرارداد ها  انواع مسائل مهم حقوقی قید می شود تا شما مشتریان محترم بتوانید مطمئن تر در زیمینه ساخت گلخانه اقدام کنید </p>
-            </div><a
-                class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
-                href="">بیشتر بخوانید<span class="sr-only">آشنایی با انواع قرارداد های شکرت گلخانه سازی گل افروز</span>
-                <svg class="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400"
-                    width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M0 0L3 3L0 6"></path>
-                </svg></a>
+            <p>مشاوره حضوری تنها با وقت قبلی صورت می گیرد و مبلغ ان سه میلیون تومان  در هر یک ساعت می باشد</p>
+            <p>مشاوره تلفنی فقط از ساعت 21 به بعد میسر است و هزینه آن یک میلیون و پانصد هزارتومان در هر یک ساعت می باشد. </p>
+            </div>
         </div>
         <img src="<?php echo get_template_directory_uri().'/img/service-card/2.webp' ?>" alt="" class="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full" width="1216" height="640">
     </li>
     <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
         <div class="order-1 sm:ml-6 xl:ml-0">
             <h3 class="mb-1 text-slate-900 font-semibold">
-                <span class="mb-1 block text-sm leading-6 text-cyan-500">کاتالوگ</span>
-                کاتالوگ های شرکت گلخانه سازی گل افروز
+                <span class="mb-1 block text-sm leading-6 text-cyan-500">تسهیلات اعطایی</span>
+                تسهیلات اعطایی معادل پنجاه درصد قرارداد
             </h3>
             <div class="prose prose-slate prose-sm text-slate-600">
-                <p>با دیدن کاتالوگ های شرکت گلخانه سازی گل افروز ضمن اینکه با انواع طرح های گلخانه سازی آشنا می شوید می توانید نمونه کارهای ما را همراه با توضیحات بخوانید و از محل های تاسیس آن ها آگاه شوید</p>
-            </div><a
-                class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
-                href="">بیشتر بخوانید<span class="sr-only">, Seamless SVG background patterns by the makers of Tailwind CSS.</span>
-                <svg class="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400"
-                    width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M0 0L3 3L0 6"></path>
-                </svg></a>
+                <p>وثیقه : برای تضمین تعهدات مالی, وثیقه ای معادل 6 دانگ ملک غیر منقول با کاربری مسکونی مورد نیاز می باشد</p>
+                <p> و همینطور یک فقره چک صیادی معتبر جهت تضمین به اندازه مبلغ تسهیلات بعلاوه بیست درصد مورد نیاز می باشد</p>
+            </div>
         </div>
         <img src="<?php echo get_template_directory_uri().'/img/service-card/3.webp' ?>" alt="" class="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full" width="1216" height="640">
     </li>
