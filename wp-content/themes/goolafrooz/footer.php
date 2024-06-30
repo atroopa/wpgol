@@ -1,8 +1,8 @@
 <!-- Footer container -->
 
 
-<footer class="relative  text-center font-bold text-brown lg:text-left ">
-  <div class="bg-cover bg-no-repeat md:bg-cover bg-center w-full h-max-screen md:h-full "
+<footer class="relative  text-center font-bold text-brown lg:text-left">
+  <div class="bg-cover bg-no-repeat md:bg-cover bg-center w-full h-max-screen md:h-full"
   style="background-image: url(<?php echo get_template_directory_uri().'/img/footer/footer-1-x.jpg' ?>)">
 
     <div class="flex items-center justify-center py-5 md:py-20"></div>
@@ -133,6 +133,7 @@
             <a class="font-semibold" href="https://t.me/atroopa">Atroopa</a>
           </div>
         </div>
+        <div class="py-0"></div>
       </div>
     </div>
   </div>
