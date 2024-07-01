@@ -53,13 +53,23 @@ add_action('wp_head', 'custom_seo_meta_tags');
  <style>
     img {
         height: auto !important;
-}
+    }
+    @media (max-width: 640px) {
+    .custom-content {
+        font-size: 0.975rem !important; /* معادل text-sm در Tailwind CSS */
+    }
+    }
+    @media (min-width: 768px) {
+        .custom-content {
+            font-size: 1.7rem !important; /* معادل text-2xl در Tailwind CSS */
+        }
+    }
  </style>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
         <!-- Blog post header -->
         <div class="py-8">
-            <h1 class="text-5xl font-bold mb-2"><?php echo esc_html($title); ?></h1>
+            <h1 class=" text-5xl font-bold mb-2"><?php echo esc_html($title); ?></h1>
         </div>
 
         <!-- Featured image -->
@@ -68,7 +78,7 @@ add_action('wp_head', 'custom_seo_meta_tags');
              class="w-full h-auto mb-8">
 
         <!-- Blog post content -->
-        <div class="py-5 text-2xl prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
+        <div class="custom-content py-5 text-sm md:text-2xl prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
             <?php echo wpautop($content); ?>
         </div>
     </div>
