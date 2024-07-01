@@ -3,7 +3,7 @@
 <?php
 // دریافت عنوان سئو با استفاده از متا فیلد Yoast SEO
 $seo_title = get_post_meta(get_the_ID(), '_yoast_wpseo_title', true);
-error_log('SEO Title: ' . $seo_title);
+//error_log('SEO Title: ' . $seo_title);
 
 // دریافت توضیحات متا با استفاده از متا فیلد Yoast SEO
 $meta_description = get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true);

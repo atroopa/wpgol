@@ -1,6 +1,6 @@
+
+
 <!-- Footer container -->
-
-
 <footer class="relative  text-center font-bold text-brown lg:text-left">
   <div class="bg-cover bg-no-repeat md:bg-cover bg-center w-full h-max-screen md:h-full"
   style="background-image: url(<?php echo get_template_directory_uri().'/img/footer/footer-1-x.jpg' ?>)">

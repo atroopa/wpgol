@@ -4,7 +4,6 @@ get_header();
 ?>
 
 <?php
-
 // دریافت عنوان سئو با استفاده از متا فیلد Yoast SEO
 $seo_title = get_post_meta(get_the_ID(), '_yoast_wpseo_title', true);
 error_log('SEO Title: ' . $seo_title);
