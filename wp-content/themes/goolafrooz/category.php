@@ -1,11 +1,12 @@
 <?php get_header(); ?>
-<?php
-if (is_category()) {
-    $category = get_queried_object();
-    //echo 'This is the category: ' . $category->slug;
 
-    $page = get_page_by_title('محصولات'); // 'عنوان صفحه' را با عنوان واقعی صفحه خود جایگزین کنید
-    $product = get_permalink( $page->ID);
+<?php
+  if (is_category()) {
+      $category = get_queried_object();
+      //echo 'This is the category: ' . $category->slug;
+
+      $page = get_page_by_title('محصولات'); // 'عنوان صفحه' را با عنوان واقعی صفحه خود جایگزین کنید
+      $product = get_permalink( $page->ID);
 ?>
 
 
