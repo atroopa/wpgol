@@ -1,14 +1,12 @@
 <?php get_header(); ?>
 
 <?php
-  if (is_category()) {
-      $category = get_queried_object();
-      //echo 'This is the category: ' . $category->slug;
+if (is_category()) {
+    $category = get_queried_object();
 
-      $page = get_page_by_title('محصولات'); // 'عنوان صفحه' را با عنوان واقعی صفحه خود جایگزین کنید
-      $product = get_permalink( $page->ID);
+    $page = get_page_by_title('محصولات');
+    $product = get_permalink($page->ID);
 ?>
-
 
 <!-- Breadcrumb -->
 <nav class="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
@@ -43,7 +41,6 @@
   </ol>
 </nav>
 
-
 <?php
     $cat_post = new WP_Query(array(
         'post_type' => 'post',
@@ -57,57 +54,56 @@
         <style>
             .card {
                 transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                position: relative;
+                z-index: 1;
             }
 
             .card:hover {
                 transform: translateY(-5px);
                 box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+                z-index: 2;
             }
 
             .card1:hover {
                 transform: rotate(-2deg) scale(1.05);
+                z-index: 2;
             }
 
             .card2:hover {
                 transform: rotate(2deg) scale(1.05);
+                z-index: 2;
             }
 
             .card3:hover {
                 transform: scale(1.05);
+                z-index: 2;
             }
 
             .card4:hover {
                 transform: skewY(-5deg);
+                z-index: 2;
             }
         </style>
 
-        <div class="my-20 md:my-0 flex justify-center items-center h-screen">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
+        <div class="my-20 md:my-2 flex justify-center items-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <?php while ($cat_post->have_posts()) {
                     $cat_post->the_post(); ?>
-                    <div class="max-w-xs bg-white rounded-lg overflow-hidden shadow-lg card card3">
+                    <div class="max-w-xs bg-white rounded-lg overflow-hidden shadow-lg card card3 mt-6 mb-6 lg:mt-8 lg:mb-8">
                     <?PHP if (has_post_thumbnail()) { ?>
-                        <img class="w-full" src="<?PHP the_post_thumbnail_url(); ?>" alt="<?PHP the_title(); ?>">
+                        <img class="object-contain h-48 w-96" src="<?PHP the_post_thumbnail_url(); ?>" alt="<?PHP the_title(); ?>">
                     <?PHP } ?>
                     <div class="p-4">
                             <h3 class="text-xl font-semibold text-gray-800"><?PHP the_title(); ?></h3>
                             <p class="text-gray-600 mt-2"><?PHP the_excerpt(); ?></p>
-                            <a href="<?PHP the_permalink(); ?>">
-                                <!-- <button  class="bg-blue-500 text-white font-semibold py-2 px-4 mt-4 rounded-lg hover:bg-blue-600 transition-all duration-300">
-                                    اطلاعات بیشتر
-                                </button> -->
-                            </a>
+                            <a href="<?PHP the_permalink(); ?>"></a>
                         </div>
                     </div>
-                <?php
-                }
-                ?>
+                <?php } ?>
             </div>
         </div>
     <?php
     }
 }
-
 ?>
 <?php get_footer(); ?>
