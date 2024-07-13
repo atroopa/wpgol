@@ -3,7 +3,6 @@
 <?php
 // دریافت عنوان سئو با استفاده از متا فیلد Yoast SEO
 $seo_title = get_post_meta(get_the_ID(), '_yoast_wpseo_title', true);
-//error_log('SEO Title: ' . $seo_title);
 
 // دریافت توضیحات متا با استفاده از متا فیلد Yoast SEO
 $meta_description = get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true);
@@ -82,6 +81,15 @@ add_action('wp_head', 'custom_seo_meta_tags');
         img {
             height: auto !important;
         }
+        @media (max-width: 640px) {
+        .custom-content {
+            font-size: 0.975rem !important; /* معادل text-sm در Tailwind CSS */
+        }
+        }
+        @media (min-width: 768px) {
+            .custom-content {
+                font-size: 1.7rem !important; /* معادل text-2xl در Tailwind CSS */
+        }
 
         /* Import Tailwind components and utilities */
         @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/components.min.css');
@@ -130,7 +138,7 @@ add_action('wp_head', 'custom_seo_meta_tags');
                 <?PHP if (has_post_thumbnail()) { ?>
                     <img src="<?PHP the_post_thumbnail_url(); ?>" alt="<?PHP the_title(); ?>" class="mb-8">
                 <?PHP } ?>
-                <div class="prose max-w-none  py-4 my-2">
+                <div class="custom-content prose max-w-none  py-4 my-2">
                     <?PHP echo nl2br($content); ?>
                 </div>
                     <?PHP the_tags('<ul class="p-2 mb-12 whitespace-nowrap no-scrollbar overflow-x-scroll overflow-y-hidden"><li class="w-fit inline-block mx-1 p-3 px-8 border-gray-900 border rounded">#', '</li><li class="w-fit inline-block mx-1 p-3 px-8 border-gray-900 border rounded">#', '</li></ul>'); ?>

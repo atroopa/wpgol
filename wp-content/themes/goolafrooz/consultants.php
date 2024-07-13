@@ -86,7 +86,7 @@ get_header();
                 <!-- team block -->
                 <div class="relative overflow-hidden mb-12 hover-grayscale-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInUp;">
                     <div class="relative overflow-hidden px-6">
-                        <img src="<?php echo get_template_directory_uri().'/img/employees/4.jpg' ?>" class="w-[140px] h-[140px] mx-auto rounded-full border-4 bg-gray-10 " alt="title image">
+                        <img src="<?php echo get_template_directory_uri().'/img/employees/44.jpg' ?>" class="w-[140px] h-[140px] mx-auto rounded-full border-4 bg-gray-10 " alt="title image">
                     </div>
                     <div class="pt-6 text-center">
                         <p class="text-lg leading-normal font-bold mb-1"> نیلوفر مهری </p>
@@ -109,4 +109,3 @@ get_header();
 </div>
 </div>
 <?php get_footer(); ?>
-
